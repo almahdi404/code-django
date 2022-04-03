@@ -1,0 +1,17 @@
+{
+  "li18n": {
+    "prefix": "li18n",
+    "body": "{% load i18n %}",
+    "description": "Load - i18n"
+  },
+  "load": {
+    "prefix": "load",
+    "body": "{% load ${1|any,static,cache,i18n,l10n,tz,flatpages,humanize,base,log,admin_list,admin_modify,admin_static,admin_urls|} %}",
+    "description": "Load - any"
+  },
+  "lstatic": {
+    "prefix": "lstatic",
+    "body": "{% load static %}",
+    "description": "Load - static"
+  }
+}

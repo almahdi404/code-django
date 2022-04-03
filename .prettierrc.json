@@ -1,0 +1,10 @@
+{
+  "overrides": [
+    {
+      "files": ["snippets/**/*.json"],
+      "options": {
+        "printWidth": 1
+      }
+    }
+  ]
+}

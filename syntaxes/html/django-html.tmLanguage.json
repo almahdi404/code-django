@@ -1,0 +1,222 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Django HTML",
+  "scopeName": "text.django",
+  "injectionSelector": "L:text.html",
+  "uuid": "26cb7a03-70e9-4726-90bc-6123are097ea",
+  "patterns": [
+    {
+      "include": "#comment"
+    },
+    {
+      "include": "#variable"
+    },
+    {
+      "include": "#tag"
+    }
+  ],
+  "repository": {
+    "comment": {
+      "name": "comment.line.django",
+      "begin": "{#",
+      "beginCaptures": {
+        "0": {
+          "name": "comment.line.begin.django"
+        }
+      },
+      "end": "#}",
+      "endCaptures": {
+        "0": {
+          "name": "comment.line.end.django"
+        }
+      }
+    },
+    "variable": {
+      "begin": "{{",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.tag.begin.django"
+        }
+      },
+      "end": "}}",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.tag.end.django"
+        }
+      },
+      "patterns": [
+        {
+          "include": "#expressionVariable"
+        }
+      ]
+    },
+    "expressionVariable": {
+      "patterns": [
+        {
+          "include": "#expressionGeneral"
+        }
+      ]
+    },
+    "tag": {
+      "begin": "{%",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.tag.begin.django"
+        }
+      },
+      "end": "%}",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.tag.end.django"
+        }
+      },
+      "patterns": [
+        {
+          "include": "#expressionTag"
+        }
+      ]
+    },
+    "expressionTag": {
+      "patterns": [
+        {
+          "match": "(?<={%\\s*)\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b",
+          "name": "keyword.control.django"
+        },
+        {
+          "match": "\\b(static|cache|i18n|l10n|tz|flatpages|humanize|base|log|admin_list|admin_modify|admin_static|admin_urls)\\b",
+          "name": "support.function.django"
+        },
+        {
+          "match": "(?<!\\.|\\|)\\b(and|or|is|not|in|as|with)\\b",
+          "name": "keyword.control.django"
+        },
+        {
+          "include": "#expressionGeneral"
+        }
+      ]
+    },
+    "expressionGeneral": {
+      "patterns": [
+        {
+          "match": "(?<=\\|)([a-zA-Z_][a-zA-Z0-9_]*)",
+          "name": "support.function.django"
+        },
+        {
+          "match": "\\b(True|False|None)\\b",
+          "name": "constant.language.django"
+        },
+        {
+          "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b",
+          "name": "variable.other.django"
+        },
+        {
+          "match": "\\b([0-9]+)\\b",
+          "name": "constant.numeric.django"
+        },
+        {
+          "match": "=",
+          "name": "keyword.operator.assignment.django"
+        },
+        {
+          "match": "(==|<=|=>|<|>|!=)",
+          "name": "keyword.operator.comparison.django"
+        },
+        {
+          "match": "(\\+|\\-|\\*\\*|\\*|//|/|%)",
+          "name": "keyword.operator.arithmetic.django"
+        },
+        {
+          "match": "(\\.|:|\\||,)",
+          "name": "keyword.operator.django"
+        },
+        {
+          "begin": "\\(",
+          "beginCaptures": {
+            "0": {
+              "name": "keyword.operator.begin.django"
+            }
+          },
+          "end": "\\)",
+          "endCaptures": {
+            "0": {
+              "name": "keyword.operator.end.django"
+            }
+          },
+          "patterns": [
+            {
+              "include": "#expressionGeneral"
+            }
+          ]
+        },
+        {
+          "begin": "\\{",
+          "beginCaptures": {
+            "0": {
+              "name": "keyword.operator.begin.django"
+            }
+          },
+          "end": "\\}",
+          "endCaptures": {
+            "0": {
+              "name": "keyword.operator.end.django"
+            }
+          },
+          "patterns": [
+            {
+              "include": "#expressionGeneral"
+            }
+          ]
+        },
+        {
+          "begin": "\\[",
+          "beginCaptures": {
+            "0": {
+              "name": "keyword.operator.begin.django"
+            }
+          },
+          "end": "\\]",
+          "endCaptures": {
+            "0": {
+              "name": "keyword.operator.end.django"
+            }
+          },
+          "patterns": [
+            {
+              "include": "#expressionGeneral"
+            }
+          ]
+        },
+        {
+          "name": "string.quoted.single.django",
+          "begin": "'",
+          "beginCaptures": {
+            "0": {
+              "name": "string.quoted.single.begin.django"
+            }
+          },
+          "end": "'",
+          "endCaptures": {
+            "0": {
+              "name": "string.quoted.single.end.django"
+            }
+          }
+        },
+        {
+          "name": "string.quoted.double.django",
+          "begin": "\"",
+          "beginCaptures": {
+            "0": {
+              "name": "string.quoted.double.begin.django"
+            }
+          },
+          "end": "\"",
+          "endCaptures": {
+            "0": {
+              "name": "string.quoted.double.end.django"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

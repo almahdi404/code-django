@@ -1,0 +1,17 @@
+{
+  "repk": {
+    "prefix": "repk",
+    "body": "r'^(?P<${1:pk}>d+)/$'",
+    "description": "Regex - PK URL"
+  },
+  "reslug": {
+    "prefix": "reslug",
+    "body": "r'^(?P<${1:slug}>[-w]+)/$'",
+    "description": "Regex - Slug URL"
+  },
+  "reusername": {
+    "prefix": "reusername",
+    "body": "r'^(?P<username>[w.@+-]+)/$'",
+    "description": "Regex - Username URL"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "fieldsets": {
+    "prefix": "fieldsets",
+    "body": [
+      "fieldsets = (",
+      "    (",
+      "        ${1:None},",
+      "        {",
+      "            'fields': ('$2',)",
+      "        },",
+      "    ),",
+      ")"
+    ],
+    "description": "Option - Model admin fieldsets"
+  }
+}

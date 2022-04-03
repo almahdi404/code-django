@@ -1,0 +1,22 @@
+{
+  "Form": {
+    "prefix": "form",
+    "body": [
+      "class ${1:FormName}Form(forms.Form):",
+      "    ${2:field_name} = forms.${3}"
+    ],
+    "description": "Class - forms.Form"
+  },
+  "ModelForm": {
+    "prefix": "modelform",
+    "body": [
+      "class ${1:ModelName}Form(forms.ModelForm):",
+      "    $0",
+      "",
+      "    class Meta:",
+      "        model = ${1:ModelName}",
+      "        fields = ('$2',)"
+    ],
+    "description": "Class - forms.ModelForm"
+  }
+}

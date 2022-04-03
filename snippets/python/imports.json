@@ -1,0 +1,22 @@
+{
+  "inpdb": {
+    "prefix": "inpdb",
+    "body": "from nose.tools import set_trace; set_trace()",
+    "description": "Import - nose pdb debug tool"
+  },
+  "ipdb": {
+    "prefix": "ipdb",
+    "body": "import ipdb; ipdb.set_trace()",
+    "description": "Import - ipdb debug tool"
+  },
+  "itraceback": {
+    "prefix": "itraceback",
+    "body": "import traceback; traceback.print_exc();",
+    "description": "Import - traceback print exception"
+  },
+  "iunicode_literals": {
+    "prefix": "iul",
+    "body": "from __future__ import unicode_literals",
+    "description": "from __future__ import unicode_literals"
+  }
+}

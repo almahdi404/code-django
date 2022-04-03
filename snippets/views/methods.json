@@ -1,0 +1,28 @@
+{
+  "dispatch": {
+    "prefix": "dispatch",
+    "body": [
+      "def dispatch(self, request, *args, **kwargs):",
+      "    return super(${1:ClassName}, self).dispatch(request, *args, **kwargs)"
+    ],
+    "description": "Method - dispatch"
+  },
+  "get_context_data": {
+    "prefix": "get_context_data",
+    "body": [
+      "def get_context_data(self, **kwargs):",
+      "    context = super(${1:ClassName}, self).get_context_data(**kwargs)",
+      "    return context"
+    ],
+    "description": "Method - get_context_data"
+  },
+  "get_queryset": {
+    "prefix": "get_queryset",
+    "body": [
+      "def get_queryset(self):",
+      "    queryset = super(${1:ClassName}, self).get_queryset()",
+      "    return queryset.filter($2)"
+    ],
+    "description": "Method - get_queryset"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "clean_data": {
+    "prefix": "clean_data",
+    "body": [
+      "def clean_${1:field_name}(self):",
+      "    ${1:field_name}_cleaned = self.cleaned_data.get('${1:field_name}')",
+      "    return ${1:field_name}_cleaned"
+    ],
+    "description": "Method - Form clean field"
+  },
+  "clean_password": {
+    "prefix": "clean_password",
+    "body": [
+      "def clean_password2(self):",
+      "    pass1 = self.cleaned_data['password1']",
+      "    pass2 = self.cleaned_data['password2']",
+      "    if pass1 and pass2 and pass1 != pass2:",
+      "        raise forms.ValidationError('password didn't match')",
+      "    return pass2"
+    ],
+    "description": "Method - Form confirm password"
+  },
+  "save": {
+    "prefix": "fsave",
+    "body": [
+      "def save(self, commit=True, *args, **kwargs):",
+      "    ${1:obj} = super().save(commit=False, *args, **kwargs)",
+      "    $0",
+      "",
+      "    if commit:",
+      "        ${1:obj}.save()",
+      "    return ${1:obj}"
+    ],
+    "description": "Method - Form custom save method"
+  }
+}

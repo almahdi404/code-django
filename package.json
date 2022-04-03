@@ -1,0 +1,215 @@
+{
+  "name": "code-django",
+  "displayName": "Django Support",
+  "description": "Best syntax highlighter and snippets for Django",
+  "version": "0.0.1",
+  "publisher": "almahdi",
+  "author": {
+    "name": "Al Mahdi"
+  },
+  "icon": "images/icon128.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devmahdi404/code-django"
+  },
+  "bugs": {
+    "url": "https://github.com/devmahdi404/code-django/issues"
+  },
+  "engines": {
+    "vscode": "^1.65.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "keywords": [
+    "django",
+    "template",
+    "highlighter",
+    "snippets",
+    "python"
+  ],
+  "scripts": {
+    "format": "prettier . -w",
+    "sortSnippets": "node scripts/sortSnippets && prettier ./snippets -w",
+    "genSnippets": "node scripts/genSnippets && prettier README.md -w",
+    "clean": "npm run sortSnippets && npm run genSnippets && npm run format"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.1"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "django-html",
+        "aliases": [
+          "Django",
+          "django"
+        ],
+        "configuration": "./django-html.language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "scopeName": "text.django",
+        "path": "./syntaxes/html/django-html.tmLanguage.json",
+        "injectTo": [
+          "text.html"
+        ]
+      },
+      {
+        "language": "django-html",
+        "scopeName": "text.html.django",
+        "path": "./syntaxes/django/django-html.tmLanguage.json",
+        "embeddedLanguages": {
+          "text.html.django": "html",
+          "source.css": "css",
+          "source.css.scss": "scss",
+          "source.css.less": "less",
+          "source.css.postcss": "vue-postcss",
+          "source.css.sugarss": "vue-sugarss",
+          "source.sass": "sass",
+          "source.stylus": "stylus",
+          "source.js": "javascript",
+          "source.ts": "typescript",
+          "source.coffee": "coffeescript",
+          "source.yaml": "yaml",
+          "source.json": "json",
+          "source.php": "php",
+          "source.graphql": "graphql"
+        }
+      }
+    ],
+    "snippets": [
+      {
+        "language": "python",
+        "path": "./snippets/admin/classes.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/admin/imports.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/admin/methods.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/admin/options.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/forms/classes.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/forms/fields.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/forms/imports.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/forms/methods.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/imports/general.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/models/classes.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/models/fields.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/models/imports.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/models/methods.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/imports.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/methods.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/templates/filters.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/templates/imports.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/templates/tags.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/templates/variables.json"
+      },
+      {
+        "language": "django-html",
+        "path": "./snippets/templates/filters.json"
+      },
+      {
+        "language": "django-html",
+        "path": "./snippets/templates/imports.json"
+      },
+      {
+        "language": "django-html",
+        "path": "./snippets/templates/tags.json"
+      },
+      {
+        "language": "django-html",
+        "path": "./snippets/templates/variables.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/templatetags/functions.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/templatetags/imports.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/urls/imports.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/urls/methods.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/urls/regexes.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/views/classes.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/views/functions.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/views/imports.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/views/methods.json"
+      }
+    ]
+  }
+}

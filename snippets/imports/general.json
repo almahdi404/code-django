@@ -1,0 +1,27 @@
+{
+  "iappforms": {
+    "prefix": "iappforms",
+    "body": "from ${1:AppName}.forms import $2",
+    "description": "Import - app.forms"
+  },
+  "iappmodels": {
+    "prefix": "iappmodels",
+    "body": "from ${1:AppName}.models import $2",
+    "description": "Import - app.models"
+  },
+  "iappviews": {
+    "prefix": "iappviews",
+    "body": "from ${1:AppName} import views",
+    "description": "Import - app.views"
+  },
+  "isettings": {
+    "prefix": "isettings",
+    "body": "from django.conf import settings",
+    "description": "from django.conf import settings"
+  },
+  "iusermodel": {
+    "prefix": "iusermodel",
+    "body": "from django.contrib.auth import get_user_model",
+    "description": "from django.contrib.auth import get_user_model"
+  }
+}

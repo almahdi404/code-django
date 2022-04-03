@@ -1,0 +1,17 @@
+{
+  "super": {
+    "prefix": "super",
+    "body": "{{ block.super }}",
+    "description": "Variable - block.super"
+  },
+  "username": {
+    "prefix": "username",
+    "body": "{{ user.${1:username} }}",
+    "description": "Variable - username"
+  },
+  "variable": {
+    "prefix": "variable",
+    "body": "{{ ${1:var} }}",
+    "description": "Variable - empty"
+  }
+}

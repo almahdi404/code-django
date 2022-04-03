@@ -1,0 +1,32 @@
+{
+  "igenericviews": {
+    "prefix": "igenericviews",
+    "body": "from django.views.generic import ${1|CreateView,DetailView,FormView,ListView,TemplateView,UpdateView|}",
+    "description": "from django.views.generic"
+  },
+  "ihttpresponse": {
+    "prefix": "ihttpresponse",
+    "body": "from django.http import HttpResponse",
+    "description": "from django.http import HttpResponse"
+  },
+  "imessages": {
+    "prefix": "imessages",
+    "body": "from django.contrib import messages",
+    "description": "from django.contrib import messages"
+  },
+  "irender": {
+    "prefix": "irender",
+    "body": "from django.shortcuts import render",
+    "description": "from django.shortcuts import render"
+  },
+  "ivdcache": {
+    "prefix": "ivdcache",
+    "body": "from django.views.decorators.cache import ${1|cache_page|}",
+    "description": "from django.views.decorators.http"
+  },
+  "ivdhttp": {
+    "prefix": "ivdhttp",
+    "body": "from django.views.decorators.http import ${1|require_http_methods|require_GET|require_POST|require_safe|}",
+    "description": "from django.views.decorators.http"
+  }
+}

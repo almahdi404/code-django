@@ -1,0 +1,63 @@
+{
+  "modeladmin": {
+    "prefix": "modeladmin",
+    "body": [
+      "@admin.register(${1:ModelName})",
+      "class ${1:ModelName}Admin(admin.ModelAdmin):",
+      "    '''Admin View for ${1:ModelName}'''",
+      "",
+      "    list_display = ('${2}',)",
+      "    list_filter = ('${3}',)",
+      "    raw_id_fields = ('${4}',)",
+      "    readonly_fields = ('${5}',)",
+      "    search_fields = ('${6}',)",
+      "    date_hierarchy = '${7}'",
+      "    ordering = ('${8}',)"
+    ],
+    "description": "Class - admin.ModelAdmin"
+  },
+  "simplelistfilter": {
+    "prefix": "simplelistfilter",
+    "body": [
+      "class ${2:ModelName}Filter(admin.SimpleListFilter):",
+      "",
+      "    title = '$3'",
+      "    parameter_name = '$1'",
+      "",
+      "    def lookups(self, request, model_admin):",
+      "        pass",
+      "",
+      "    def queryset(self, request, queryset):",
+      "        return queryset"
+    ],
+    "description": "Class - admin.SimpleListFilter"
+  },
+  "stackedinline": {
+    "prefix": "stackedinline",
+    "body": [
+      "class ${1:ModelName}Inline(admin.StackedInline):",
+      "    '''Stacked Inline View for ${1}'''",
+      "",
+      "    model = ${2:${1}}",
+      "    min_num = ${3:3}",
+      "    max_num = ${4:10}",
+      "    extra = ${5:1}",
+      "    raw_id_fields = (${6},)"
+    ],
+    "description": "Class - admin.StackedInline"
+  },
+  "tabularinline": {
+    "prefix": "tabularinline",
+    "body": [
+      "class ${1:ModelName}Inline(admin.TabularInline):",
+      "    '''Tabular Inline View for ${1}'''",
+      "",
+      "    model = ${2:${1}}",
+      "    min_num = ${3:3}",
+      "    max_num = ${4:10}",
+      "    extra = ${5:1}",
+      "    raw_id_fields = (${6},)"
+    ],
+    "description": "Class - admin.TabularInline"
+  }
+}

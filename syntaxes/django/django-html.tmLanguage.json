@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Django HTML",
+  "scopeName": "text.html.django",
+  "uuid": "d3cb7a03-70ew-h72f-90bc-6123a8e09wea",
+  "patterns": [
+    {
+      "include": "text.html.basic"
+    }
+  ]
+}

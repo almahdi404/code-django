@@ -1,0 +1,21 @@
+{
+  "view": {
+    "prefix": "view",
+    "body": [
+      "def ${1:view_name}(request):",
+      "    context = {}",
+      "    $0",
+      "    return render(request, '${2:template}.html', context)"
+    ],
+    "description": "View - function (render)"
+  },
+  "view_hr": {
+    "prefix": "view_hr",
+    "body": [
+      "def ${1:view_name}(request):",
+      "    $0",
+      "    return httpResponse($2)"
+    ],
+    "description": "View - function (httpResponse)"
+  }
+}

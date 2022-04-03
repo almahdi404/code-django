@@ -1,0 +1,45 @@
+{
+  "register_assignment_tag": {
+    "prefix": "register_assignment_tag",
+    "body": [
+      "def get_$1(context):",
+      "    request = context.get('request')",
+      "    $1 = ${2:[]}",
+      "    return ${3:$1}"
+    ],
+    "description": "Custom Tag - Assignment"
+  },
+  "register_filter": {
+    "prefix": "register_filter",
+    "body": [
+      "@register.filter",
+      "def ${1:tag_name}(value):",
+      "    return $2"
+    ],
+    "description": "Custom Filter - Regular"
+  },
+  "register_inclusion_tag": {
+    "prefix": "register_inclusion_tag",
+    "body": [
+      "@register.inclusion_tag('${1:template}.html', takes_context=True)",
+      "def ${1:tag_name}(context):",
+      "    request = context.get('request')",
+      "    $3",
+      "    return {",
+      "        'request': request,",
+      "        $4",
+      "    }"
+    ],
+    "description": "Custom Tag - Inclusion"
+  },
+  "register_simple_tag": {
+    "prefix": "register_simple_tag",
+    "body": [
+      "@register.simple_tag(takes_context=True)",
+      "def ${1:tag_name}(context):",
+      "    request = context.get('request')",
+      "    return ${2:'It Works!'}"
+    ],
+    "description": "Custom Tag - Simple"
+  }
+}

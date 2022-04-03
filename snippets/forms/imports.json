@@ -1,0 +1,12 @@
+{
+  "iforms": {
+    "prefix": "iforms",
+    "body": "from django import forms",
+    "description": "from django import forms"
+  },
+  "ipostgresff": {
+    "prefix": "ipostgresff",
+    "body": "from django.contrib.postgres.forms import ${1|SimpleArrayField,SplitArrayField,HStoreField,JSONField,IntegerRangeField,FloatRangeField,DateTimeRangeField,DateRangeField|}",
+    "description": "PostgreSQL specific forms fields"
+  }
+}

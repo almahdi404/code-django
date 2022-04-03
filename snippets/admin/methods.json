@@ -1,0 +1,17 @@
+{
+  "register": {
+    "prefix": "register",
+    "body": "admin.site.register([$1])",
+    "description": "Method - Register model without providing a ModelAdmin"
+  },
+  "registerd": {
+    "prefix": "registerd",
+    "body": "@admin.register($1Admin)",
+    "description": "Method - Register model with providing a ModelAdmin using decorator"
+  },
+  "registerma": {
+    "prefix": "registerma",
+    "body": "admin.site.register([$1], $1Admin)",
+    "description": "Method - Register model providing a ModelAdmin"
+  }
+}

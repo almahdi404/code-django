@@ -1,0 +1,282 @@
+{
+  "add": {
+    "prefix": "|add",
+    "body": "|add",
+    "description": "Filter - add"
+  },
+  "addslashes": {
+    "prefix": "|addslashes",
+    "body": "|addslashes",
+    "description": "Filter - addslashes"
+  },
+  "capfirst": {
+    "prefix": "|capfirst",
+    "body": "|capfirst",
+    "description": "Filter - capfirst"
+  },
+  "center": {
+    "prefix": "|center",
+    "body": "|center:",
+    "description": "Filter - center:Arg"
+  },
+  "cut": {
+    "prefix": "|cut",
+    "body": "|cut:",
+    "description": "Filter - cut:Arg"
+  },
+  "date": {
+    "prefix": "|date",
+    "body": "|date",
+    "description": "Filter - date"
+  },
+  "default": {
+    "prefix": "|default",
+    "body": "|default:",
+    "description": "Filter - default:Arg"
+  },
+  "default_if_none": {
+    "prefix": "|default_if_none",
+    "body": "|default_if_none:",
+    "description": "Filter - default_if_none:Arg"
+  },
+  "dictsort": {
+    "prefix": "|dictsort",
+    "body": "|dictsort:",
+    "description": "Filter - dictsort:Arg"
+  },
+  "dictsortreversed": {
+    "prefix": "|dictsortreversed",
+    "body": "|dictsortreversed:",
+    "description": "Filter - dictsortreversed:Arg"
+  },
+  "divisibleby": {
+    "prefix": "|divisibleby",
+    "body": "|divisibleby:",
+    "description": "Filter - divisibleby:Arg"
+  },
+  "escape": {
+    "prefix": "|escape",
+    "body": "|escape",
+    "description": "Filter - escape"
+  },
+  "escapejs": {
+    "prefix": "|escapejs",
+    "body": "|escapejs",
+    "description": "Filter - escapejs"
+  },
+  "filesizeformat": {
+    "prefix": "|filesizeformat",
+    "body": "|filesizeformat",
+    "description": "Filter - filesizeformat"
+  },
+  "first": {
+    "prefix": "|first",
+    "body": "|first",
+    "description": "Filter - first"
+  },
+  "floatformat": {
+    "prefix": "|floatformat",
+    "body": "|floatformat",
+    "description": "Filter - floatformat"
+  },
+  "force_escape": {
+    "prefix": "|force_escape",
+    "body": "|force_escape",
+    "description": "Filter - force_escape"
+  },
+  "get_digit": {
+    "prefix": "|get_digit",
+    "body": "|get_digit",
+    "description": "Filter - get_digit"
+  },
+  "iriencode": {
+    "prefix": "|iriencode",
+    "body": "|iriencode",
+    "description": "Filter - iriencode"
+  },
+  "join": {
+    "prefix": "|join",
+    "body": "|join:",
+    "description": "Filter - join:Arg"
+  },
+  "last": {
+    "prefix": "|last",
+    "body": "|last",
+    "description": "Filter - last"
+  },
+  "length": {
+    "prefix": "|length",
+    "body": "|length",
+    "description": "Filter - length"
+  },
+  "length_is": {
+    "prefix": "|length_is",
+    "body": "|length_is:",
+    "description": "Filter - length_is:Arg"
+  },
+  "linebreaks": {
+    "prefix": "|linebreaks",
+    "body": "|linebreaks",
+    "description": "Filter - linebreaks"
+  },
+  "linebreaksbr": {
+    "prefix": "|linebreaksbr",
+    "body": "|linebreaksbr",
+    "description": "Filter - linebreaksbr"
+  },
+  "linenumbers": {
+    "prefix": "|linenumbers",
+    "body": "|linenumbers",
+    "description": "Filter - linenumbers"
+  },
+  "ljust": {
+    "prefix": "|ljust",
+    "body": "|ljust",
+    "description": "Filter - ljust"
+  },
+  "lower": {
+    "prefix": "|lower",
+    "body": "|lower",
+    "description": "Filter - lower"
+  },
+  "make_list": {
+    "prefix": "|make_list",
+    "body": "|make_list",
+    "description": "Filter - make_list"
+  },
+  "phone2numeric": {
+    "prefix": "|phone2numeric",
+    "body": "|phone2numeric",
+    "description": "Filter - phone2numeric"
+  },
+  "pluralize": {
+    "prefix": "|pluralize",
+    "body": "|pluralize",
+    "description": "Filter - pluralize"
+  },
+  "pprint": {
+    "prefix": "|pprint",
+    "body": "|pprint",
+    "description": "Filter - pprint"
+  },
+  "random": {
+    "prefix": "|random",
+    "body": "|random",
+    "description": "Filter - random"
+  },
+  "rjust": {
+    "prefix": "|rjust",
+    "body": "|rjust",
+    "description": "Filter - rjust"
+  },
+  "safe": {
+    "prefix": "|safe",
+    "body": "|safe",
+    "description": "Filter - safe"
+  },
+  "safeseq": {
+    "prefix": "|safeseq",
+    "body": "|safeseq",
+    "description": "Filter - safeseq"
+  },
+  "slice": {
+    "prefix": "|slice",
+    "body": "|slice:",
+    "description": "Filter - slice:Arg"
+  },
+  "slugify": {
+    "prefix": "|slugify",
+    "body": "|slugify",
+    "description": "Filter - slugify"
+  },
+  "stringformat": {
+    "prefix": "|stringformat",
+    "body": "|stringformat",
+    "description": "Filter - stringformat"
+  },
+  "striptags": {
+    "prefix": "|striptags",
+    "body": "|striptags",
+    "description": "Filter - striptags"
+  },
+  "time": {
+    "prefix": "|time",
+    "body": "|time:",
+    "description": "Filter - time:Arg"
+  },
+  "timesince": {
+    "prefix": "|timesince",
+    "body": "|timesince:",
+    "description": "Filter - timesince:Arg"
+  },
+  "timeuntil": {
+    "prefix": "|timeuntil",
+    "body": "|timeuntil:",
+    "description": "Filter - timeuntil:Arg"
+  },
+  "title": {
+    "prefix": "|title",
+    "body": "|title",
+    "description": "Filter - title"
+  },
+  "truncatechars": {
+    "prefix": "|truncatechars",
+    "body": "|truncatechars:1",
+    "description": "Filter - truncatechars:Arg"
+  },
+  "truncatechars_html": {
+    "prefix": "|truncatechars_html",
+    "body": "|truncatechars_html:",
+    "description": "Filter - truncatechars_html:Arg"
+  },
+  "truncatewords": {
+    "prefix": "|truncatewords",
+    "body": "|truncatewords:",
+    "description": "Filter - truncatewords:Arg"
+  },
+  "truncatewords_html": {
+    "prefix": "|truncatewords_html",
+    "body": "|truncatewords_html:",
+    "description": "Filter - truncatewords_html:Arg"
+  },
+  "unordered_list": {
+    "prefix": "|unordered_list",
+    "body": "|unordered_list",
+    "description": "Filter - unordered_list"
+  },
+  "upper": {
+    "prefix": "|upper",
+    "body": "|upper",
+    "description": "Filter - upper"
+  },
+  "urlencode": {
+    "prefix": "|urlencode",
+    "body": "|urlencode",
+    "description": "Filter - urlencode"
+  },
+  "urlize": {
+    "prefix": "|urlize",
+    "body": "|urlize",
+    "description": "Filter - urlize"
+  },
+  "urlizetrunc": {
+    "prefix": "|urlizetrunc",
+    "body": "|urlizetrunc",
+    "description": "Filter - urlizetrunc"
+  },
+  "wordcount": {
+    "prefix": "|wordcount",
+    "body": "|wordcount",
+    "description": "Filter - wordcount"
+  },
+  "wordwrap": {
+    "prefix": "|wordwrap",
+    "body": "|wordwrap",
+    "description": "Filter - wordwrap"
+  },
+  "yesno": {
+    "prefix": "|yesno",
+    "body": "|yesno:'${1:yeah},${2:no},${3:maybe}'",
+    "description": "Filter - yesno:Arg"
+  }
+}

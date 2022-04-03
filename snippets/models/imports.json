@@ -1,0 +1,27 @@
+{
+  "iappmanagers": {
+    "prefix": "iappmanagers",
+    "body": "from ${1:AppName}.managers import $2",
+    "description": "Import - managers"
+  },
+  "imodels": {
+    "prefix": "imodels",
+    "body": "from django.db import models",
+    "description": "from django.db import models"
+  },
+  "ipostgresmf": {
+    "prefix": "ipostgresmf",
+    "body": "from django.contrib.postgres.fields import ${1|ArrayField,JSONField,HStoreField|}",
+    "description": "from django.contrib.postgres.fields"
+  },
+  "ipy2_unicode_compatible": {
+    "prefix": "iuc",
+    "body": "from django.utils.encoding import python_2_unicode_compatible",
+    "description": "For forwards compatibility, this decorator is available as of Django 1.4.2."
+  },
+  "isignals": {
+    "prefix": "isignals",
+    "body": "from django.db.models.signals import ${1|pre_init,post_init,pre_save,post_save,pre_delete,post_delete,m2m_changed,class_prepared,Management signals,pre_migrate,post_migrate|}",
+    "description": "from django.db.models.signals"
+  }
+}

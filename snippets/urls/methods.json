@@ -1,0 +1,47 @@
+{
+  "path_inline": {
+    "prefix": "path_inline",
+    "body": [
+      "path('${1:ROUTE}', views.${2:view_name}${3:.as_view()}, name='$4'),"
+    ],
+    "description": "Route - path(route, view, name)"
+  },
+  "path_stack": {
+    "prefix": "path_stack",
+    "body": [
+      "path(",
+      "    '${1:ROUTE}',",
+      "    views.${2:view_name}${3:.as_view()},",
+      "    name='$4'",
+      "),"
+    ],
+    "description": "Route - path(route, view, name)"
+  },
+  "url_inline": {
+    "prefix": "url_inline",
+    "body": [
+      "${1|url,re_path|}(r'^${2:REGEX}$', views.${3:view_name}${4:.as_view()}, name='$5'),"
+    ],
+    "description": "Route - url(regex, view, name)"
+  },
+  "url_stack": {
+    "prefix": "url_stack",
+    "body": [
+      "${1|url,re_path|}(",
+      "    r'^${2:REGEX}$',",
+      "    views.${3:view_name}${4:.as_view()},",
+      "    name='$5'",
+      "),"
+    ],
+    "description": "Route - url(regex, view, name)"
+  },
+  "urlpatterns": {
+    "prefix": "urlpatterns",
+    "body": [
+      "urlpatterns = [",
+      "    $0",
+      "]"
+    ],
+    "description": "urlpatterns = []"
+  }
+}

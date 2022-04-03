@@ -1,0 +1,72 @@
+{
+  "Model": {
+    "prefix": "Model",
+    "body": [
+      "class ${1:ModelName}(models.Model):",
+      "    '''${2:Model definition for $1}.'''",
+      "",
+      "    class Meta:",
+      "        '''Meta definition for $1.'''",
+      "",
+      "        verbose_name = '$1'",
+      "        verbose_name_plural = '$1s'",
+      "",
+      "    def ${4|__str__,__unicode__|}(self):",
+      "        ${5|pass,return '{}'.format(self.${6:field_name}),return f'{self.${6:field_name}}'|}"
+    ],
+    "description": "Class - models.Model"
+  },
+  "ModelFull": {
+    "prefix": "ModelFull",
+    "body": [
+      "class ${1:ModelName}(models.Model):",
+      "    '''${2:Model definition for $1}.'''",
+      "",
+      "    class Meta:",
+      "        '''Meta definition for $1.'''",
+      "",
+      "        verbose_name = '$1'",
+      "        verbose_name_plural = '$1s'",
+      "",
+      "    def ${4|__str__,__unicode__|}(self):",
+      "        ${7|pass,return '{}'.format(self.${6:field_name}),return f'{self.${6:field_name}}'|}",
+      "",
+      "    def save(self):",
+      "        '''Save method for $1.'''",
+      "        pass",
+      "",
+      "    def get_absolute_url(self):",
+      "        '''Return absolute url for $1.'''",
+      "        return ('')"
+    ],
+    "description": "Class - models.Model (full)"
+  },
+  "ModelMixin": {
+    "prefix": "ModelMixin",
+    "body": [
+      "class $1Mixin(models.Model):",
+      "    $0",
+      "",
+      "    class Meta:",
+      "        abstract = True"
+    ],
+    "description": "Class - models.Model (mixin)"
+  },
+  "manager": {
+    "prefix": "manager",
+    "body": [
+      "class $1Manager(models.Manager):",
+      "    def get_queryset(self):",
+      "        return super ($1Manager, self).get_queryset().${2|filter,exclude,order_by,distinct,reverse|}($3)"
+    ],
+    "description": "Class - models.Manager"
+  },
+  "queryset": {
+    "prefix": "queryset",
+    "body": [
+      "class $1QuerySet(models.QuerySet):",
+      "    $0"
+    ],
+    "description": "Class - models.QuerySet"
+  }
+}

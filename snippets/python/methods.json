@@ -1,0 +1,11 @@
+{
+  "__init__": {
+    "prefix": "__init__",
+    "body": [
+      "def __init__(self, *args, **kwargs):",
+      "    super(${1:ClassName}, self).__init__(*args, **kwargs)",
+      "    $0"
+    ],
+    "description": "Methods - __init__"
+  }
+}

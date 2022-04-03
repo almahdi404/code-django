@@ -1,0 +1,55 @@
+{
+  "createview": {
+    "prefix": "createview",
+    "body": [
+      "class ${1:ModelName}CreateView(CreateView):",
+      "    model = ${1:ModelName}",
+      "    template_name = '${2:template}.html'"
+    ],
+    "description": "View - class (CreateView)"
+  },
+  "deleteview": {
+    "prefix": "deleteview",
+    "body": [
+      "class ${1:ModelName}DeleteView(DeleteView):",
+      "    model = ${1:ModelName}",
+      "    template_name = '${2:template}.html'"
+    ],
+    "description": "View - class (DeleteView)"
+  },
+  "detailview": {
+    "prefix": "detailview",
+    "body": [
+      "class ${1:ModelName}DetailView(DetailView):",
+      "    model = ${1:ModelName}",
+      "    template_name = '${2:template}.html'"
+    ],
+    "description": "View - class (DetailView)"
+  },
+  "listview": {
+    "prefix": "listview",
+    "body": [
+      "class ${1:ModelName}ListView(ListView):",
+      "    model = ${1:ModelName}",
+      "    template_name = '${2:template}.html'"
+    ],
+    "description": "View - class (ListView)"
+  },
+  "templateview": {
+    "prefix": "templateview",
+    "body": [
+      "class ${1:ViewName}(TemplateView):",
+      "    template_name = '${2:template}.html'"
+    ],
+    "description": "View - class (TemplateView)"
+  },
+  "updateview": {
+    "prefix": "updateview",
+    "body": [
+      "class ${1:ModelName}UpdateView(UpdateView):",
+      "    model = ${1:ModelName}",
+      "    template_name = '${2:template}.html'"
+    ],
+    "description": "View - class (UpdateView)"
+  }
+}
