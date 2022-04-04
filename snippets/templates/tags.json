@@ -1,7 +1,11 @@
 {
   "autoescape": {
     "prefix": "autoescape",
-    "body": "{% autoescape ${1|off,on|} %}$0{% endautoescape %}",
+    "body": [
+      "{% autoescape ${1|off,on|} %}",
+      "\t${2:$TM_SELECTED_TEXT}",
+      "{% endautoescape %}"
+    ],
     "description": "{% autoescape %} {% endautoescape %}"
   },
   "autoescape_paste": {
@@ -15,7 +19,11 @@
   },
   "block": {
     "prefix": "block",
-    "body": "{% block $1 %}$0{% endblock $1 %}",
+    "body": [
+      "{% block $1 %}",
+      "\t${2:$TM_SELECTED_TEXT}",
+      "{% endblock $1 %}"
+    ],
     "description": "{% block %} {% endblock %}"
   },
   "block_paste": {
@@ -29,35 +37,47 @@
   },
   "blocktrans": {
     "prefix": "blocktrans",
-    "body": "{% blocktrans ${1:trimmed} %}$0{% endblocktrans %}",
+    "body": [
+      "{% blocktrans ${1:trimmed %}",
+      "\t${2:$TM_SELECTED_TEXT}",
+      "{% endblocktrans %}"
+    ],
     "description": "{% blocktrans %} {% endblocktrans %}"
   },
   "blocktrans_paste": {
     "prefix": "blocktrans_paste",
     "body": [
       "{% blocktrans ${1:trimmed %}",
-      "\t${1:$CLIPBOARD}",
+      "\t${2:$CLIPBOARD}",
       "{% endblocktrans %}"
     ],
     "description": "{% blocktrans %} (paste) {% endblocktrans %}"
   },
   "blocktrans_with": {
     "prefix": "blocktrans_with",
-    "body": "{% blocktrans with $1=$2 ${3:trimmed} %}$0{% endblocktrans %}",
-    "description": "{% blocktrans as %} {% endblocktrans %}"
+    "body": [
+      "{% blocktrans with $1=$2 ${3:trimmed} %}",
+      "\t${4:$TM_SELECTED_TEXT}",
+      "{% endblocktrans %}"
+    ],
+    "description": "{% blocktrans with %} {% endblocktrans %}"
   },
   "blocktrans_with_paste": {
     "prefix": "blocktrans_with_paste",
     "body": [
       "{% blocktrans with $1=$2 ${3:trimmed} %}",
-      "\t${3:$CLIPBOARD}",
+      "\t${4:$CLIPBOARD}",
       "{% endblocktrans %}"
     ],
-    "description": "{% blocktrans as %} (paste) {% endblocktrans %}"
+    "description": "{% blocktrans with %} (paste) {% endblocktrans %}"
   },
   "blocktranslate": {
     "prefix": "blocktranslate",
-    "body": "{% blocktranslate %}$0{% endblocktranslate %}",
+    "body": [
+      "{% blocktranslate %}",
+      "\t${1:$TM_SELECTED_TEXT}",
+      "{% endblocktranslate %}"
+    ],
     "description": "{% blocktranslate %} {% endblocktranslate %}"
   },
   "blocktranslate_paste": {
@@ -71,13 +91,17 @@
   },
   "blocktranslate_with": {
     "prefix": "blocktranslate_with",
-    "body": "{% blocktranslate with $1=$2 ${3:trimmed }%}$0{% endblocktranslate %}",
+    "body": [
+      "{% blocktranslate with $1=$2 ${3:trimmed} %}",
+      "\t${4:$TM_SELECTED_TEXT}",
+      "{% endblocktranslate %}"
+    ],
     "description": "{% blocktranslate as %} {% endblocktranslate %}"
   },
   "blocktranslate_with_paste": {
     "prefix": "blocktranslate_with_paste",
     "body": [
-      "{% blocktranslate with $1=$2 ${3:trimmed }%}",
+      "{% blocktranslate with $1=$2 ${3:trimmed} %}",
       "\t${4:$CLIPBOARD}",
       "{% endblocktranslate %}"
     ],
@@ -85,7 +109,7 @@
   },
   "comment": {
     "prefix": "comment",
-    "body": "{# $0 #}",
+    "body": "{# ${1:TM_SELECTED_TEXT} #}",
     "description": "{# #}"
   },
   "comment_block": {
@@ -99,7 +123,11 @@
   },
   "comment_paste": {
     "prefix": "comment_paste",
-    "body": "{% comment $1 %}${2:$CLIPBOARD}{% endcomment %}",
+    "body": [
+      "{% comment $1 %}",
+      "\t${2:$CLIPBOARD}",
+      "{% endcomment %}"
+    ],
     "description": "{% comment %} (paste) {% endcomment %}"
   },
   "csrf_token": {
@@ -184,7 +212,7 @@
   },
   "filter": {
     "prefix": "filter",
-    "body": "{% filter $1 %}$0{% endfilter %}",
+    "body": "{% filter $1 %}$2{% endfilter %}",
     "description": "{% filter %} {% endfilter %}"
   },
   "filter_paste": {
@@ -199,52 +227,100 @@
   },
   "for": {
     "prefix": "for",
-    "body": "{% for $1 in $2 %}$0{% endfor %}",
+    "body": [
+      "{% for $1 in $2 %}",
+      "\t${3:$TM_SELECTED_TEXT}",
+      "{% endfor %}"
+    ],
     "description": "{% for %} {% endfor %}"
   },
   "for_paste": {
     "prefix": "for_paste",
-    "body": "{% for $1 in $2 %}${3:$CLIPBOARD}{% endfor %}",
+    "body": [
+      "{% for $1 in $2 %}",
+      "\t${3:$CLIPBOARD}",
+      "{% endfor %}"
+    ],
     "description": "{% for %} (paste) {% endfor %}"
   },
   "forempty": {
     "prefix": "forempty",
-    "body": "{% for $1 in $2 %}$0{% empty %}$3{% endfor %}",
+    "body": [
+      "{% for $1 in $2 %}",
+      "\t${3:$TM_SELECTED_TEXT}",
+      "{% empty %}",
+      "\t$4",
+      "{% endfor %}"
+    ],
     "description": "{% forempty %} {% empty %} {% endfor %}"
   },
   "forempty_paste": {
     "prefix": "forempty_paste",
-    "body": "{% for $1 in $2 %}${3:$CLIPBOARD}{% empty %}$0{% endfor %}",
+    "body": [
+      "{% for $1 in $2 %}",
+      "\t${3:$CLIPBOARD}",
+      "{% empty %}",
+      "\t$4",
+      "{% endfor %}"
+    ],
     "description": "{% forempty %} (paste) {% empty %} {% endfor %}"
   },
   "if": {
     "prefix": "if",
-    "body": "{% if $1 %}$0{% endif %}",
+    "body": [
+      "{% if $1 %}",
+      "\t${2:$TM_SELECTED_TEXT}",
+      "{% endif %}"
+    ],
     "description": "{% if %} {% endif %}"
   },
   "if_paste": {
     "prefix": "if_paste",
-    "body": "{% if $1 %}${2:$CLIPBOARD}{% endif %}",
+    "body": [
+      "{% if $1 %}",
+      "\t${2:$CLIPBOARD}",
+      "{% endif %}"
+    ],
     "description": "{% if %} (paste) {% endif %}"
   },
   "ifchanged": {
     "prefix": "ifchanged",
-    "body": "{% ifchanged $1 %}$0{% endifchanged %}",
+    "body": [
+      "{% ifchanged $1 %}",
+      "\t${2:$TM_SELECTED_TEXT}",
+      "{% endifchanged %}"
+    ],
     "description": "{% ifchanged %} {% endifchanged %}"
   },
   "ifchanged_paste": {
     "prefix": "ifchanged_paste",
-    "body": "{% ifchanged $1 %}$0{% endifchanged %}",
-    "description": "{% ifchanged  %} {% endifchanged %}"
+    "body": [
+      "{% ifchanged $1 %}",
+      "\t${2:$CLIPBOARD}",
+      "{% endifchanged %}"
+    ],
+    "description": "{% ifchanged %} (paste) {% endifchanged %}"
   },
   "ifelse": {
     "prefix": "ifelse",
-    "body": "{% if $1 %}$2{% else %}$0{% endif %}",
+    "body": [
+      "{% if $1 %}",
+      "\t${2:$TM_SELECTED_TEXT}",
+      "{% else %}",
+      "\t$3",
+      "{% endif %}"
+    ],
     "description": "{% if %} {% else %} {% endif %}"
   },
   "ifelse_paste": {
     "prefix": "ifelse_paste",
-    "body": "{% if $1 %}${2:$CLIPBOARD}{% else %}$0{% endif %}",
+    "body": [
+      "{% if $1 %}",
+      "\t${2:$CLIPBOARD}",
+      "{% else %}",
+      "\t$3",
+      "{% endif %}"
+    ],
     "description": "{% if %} (paste) {% else %} {% endif %}"
   },
   "include": {
@@ -274,11 +350,11 @@
       "<ul>",
       "\t{% for ${2:category}, ${3:obj}_list in ${2:category}_list %}",
       "\t\t<li>{{ ${2:category} }}",
-      "\t\t<ul>",
-      "\t\t\t{% for ${3:obj} in ${3:obj}_list %}",
-      "\t\t\t\t<li>{{ ${3:obj} }}</li>",
-      "\t\t\t{% endfor %}",
-      "\t\t</ul>",
+      "\t\t\t<ul>",
+      "\t\t\t\t{% for ${3:obj} in ${3:obj}_list %}",
+      "\t\t\t\t\t<li>{{ ${3:obj} }}</li>",
+      "\t\t\t\t{% endfor %}",
+      "\t\t\t</ul>",
       "\t\t</li>",
       "\t{% endfor %}",
       "</ul>"
@@ -292,7 +368,11 @@
   },
   "spaceless": {
     "prefix": "spaceless",
-    "body": "{% spaceless %}$0{% endspaceless %}",
+    "body": [
+      "{% spaceless %}",
+      "\t${1:$TM_SELECTED_TEXT}",
+      "{% endspaceless %}"
+    ],
     "description": "{% spaceless %} {% endspaceless %}"
   },
   "spaceless_paste": {
@@ -365,26 +445,34 @@
   },
   "verbatim_paste": {
     "prefix": "verbatim_paste",
-    "body": "{% verbatim $1 %}${2:$CLIPBOARD}{% endverbatim $1 %}",
+    "body": [
+      "{% verbatim $1 %}",
+      "\t${2:$CLIPBOARD}",
+      "{% endverbatim $1 %}"
+    ],
     "description": "{% verbatim %} (paste) {% endverbatim %}"
   },
   "widthratio": {
     "prefix": "widthratio",
-    "body": "{% widthratio ${1:this_value} ${2:max_value} ${3:max_width} ${4:as ${5:width}}%}",
+    "body": "{% widthratio ${1:this_value} ${2:max_value} ${3:max_width} ${4:as ${5:width}} %}",
     "description": "{% widthratio %}"
   },
   "with": {
     "prefix": "with",
     "body": [
-      "{% with $1 as $2 %}",
+      "{% with $1=$2 %}",
       "\t${3:$TM_SELECTED_TEXT}",
       "{% endwith %}"
     ],
-    "description": "{% with as %} {% endwith %}"
+    "description": "{% with %} {% endwith %}"
   },
   "with_paste": {
     "prefix": "with_paste",
-    "body": "{% with $1 as $2 %}${3:$CLIPBOARD}{% endwith %}",
-    "description": "{% with as %} (paste) {% endwith %}"
+    "body": [
+      "{% with $1=$2 %}",
+      "\t${3:$CLIPBOARD}",
+      "{% endwith %}"
+    ],
+    "description": "{% with %} (paste) {% endwith %}"
   }
 }
