@@ -29,7 +29,7 @@ fs.readFile("package.json", "utf-8", function (err, data) {
     for (let i in snippetStoreSorted) {
       const snippetPath = path.parse(i);
       const folder = path.normalize(snippetPath.dir).split(path.sep)[1];
-      snippetTables += `\n### **${folder} - ${snippetPath.name}**`;
+      snippetTables += `\n### _**${folder}**_ / _**${snippetPath.name}**_`;
       snippetTables += "\n| Trigger | Description |";
       snippetTables += "\n|---------|-------------|";
 

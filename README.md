@@ -4,7 +4,7 @@
 
 ## Features
 
-### 1. `Syntax Highlighting`
+> 1\. Syntax Highlighting
 
 Django template language syntax highlighting in **html** !
 
@@ -14,11 +14,17 @@ No need to switch to **django-html** !
 
 ![highlighting](images/feature-highlighting.gif)
 
-### 2. `Snippets`
+<br/>
+
+If you love this extension, you could [Buy me a coffee](https://www.buymeacoffee.com/almahdi) ☕
+
+<br/>
+
+> 2\. Snippets
 
 <!-- StartSnippets -->
 
-### **admin - classes**
+### _**admin**_ / _**classes**_
 
 | Trigger            | Description                     |
 | ------------------ | ------------------------------- |
@@ -27,14 +33,14 @@ No need to switch to **django-html** !
 | `stackedinline`    | Class \- admin.StackedInline    |
 | `tabularinline`    | Class \- admin.TabularInline    |
 
-### **admin - imports**
+### _**admin**_ / _**imports**_
 
 | Trigger      | Description                                |
 | ------------ | ------------------------------------------ |
 | `iadmin`     | from django.contrib import admin           |
 | `iadminsite` | from django.contrib.admin import AdminSite |
 
-### **admin - methods**
+### _**admin**_ / _**methods**_
 
 | Trigger      | Description                                                          |
 | ------------ | -------------------------------------------------------------------- |
@@ -42,20 +48,20 @@ No need to switch to **django-html** !
 | `registerd`  | Method \- Register model with providing a ModelAdmin using decorator |
 | `registerma` | Method \- Register model providing a ModelAdmin                      |
 
-### **admin - options**
+### _**admin**_ / _**options**_
 
 | Trigger     | Description                     |
 | ----------- | ------------------------------- |
 | `fieldsets` | Option \- Model admin fieldsets |
 
-### **forms - classes**
+### _**forms**_ / _**classes**_
 
 | Trigger     | Description              |
 | ----------- | ------------------------ |
 | `form`      | Class \- forms.Form      |
 | `modelform` | Class \- forms.ModelForm |
 
-### **forms - fields**
+### _**forms**_ / _**fields**_
 
 | Trigger          | Description                                                                                                        |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------ |
@@ -98,14 +104,14 @@ No need to switch to **django-html** !
 | `furl`           | Field \- forms.URLField                                                                                            |
 | `fuuid`          | Field \- forms.UUIDField                                                                                           |
 
-### **forms - imports**
+### _**forms**_ / _**imports**_
 
 | Trigger       | Description                      |
 | ------------- | -------------------------------- |
 | `iforms`      | from django import forms         |
 | `ipostgresff` | PostgreSQL specific forms fields |
 
-### **forms - methods**
+### _**forms**_ / _**methods**_
 
 | Trigger          | Description                       |
 | ---------------- | --------------------------------- |
@@ -113,7 +119,7 @@ No need to switch to **django-html** !
 | `clean_password` | Method \- Form confirm password   |
 | `fsave`          | Method \- Form custom save method |
 
-### **imports - general**
+### _**imports**_ / _**general**_
 
 | Trigger      | Description                                    |
 | ------------ | ---------------------------------------------- |
@@ -123,7 +129,7 @@ No need to switch to **django-html** !
 | `isettings`  | from django.conf import settings               |
 | `iusermodel` | from django.contrib.auth import get_user_model |
 
-### **models - classes**
+### _**models**_ / _**classes**_
 
 | Trigger      | Description                     |
 | ------------ | ------------------------------- |
@@ -133,7 +139,7 @@ No need to switch to **django-html** !
 | `manager`    | Class \- models.Manager         |
 | `queryset`   | Class \- models.QuerySet        |
 
-### **models - fields**
+### _**models**_ / _**fields**_
 
 | Trigger        | Description                                                                                                                                                     |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -175,7 +181,7 @@ No need to switch to **django-html** !
 | `muuid`        | Field \- models.UUIDField \(A field for storing universally unique identifiers. Uses Python’s UUID class\)                                                      |
 | `mxml`         | Field \- models.XMLField \(All uses of XMLField can be replaced with TextField. This field has been deprecated since version 1.3\)                              |
 
-### **models - imports**
+### _**models**_ / _**imports**_
 
 | Trigger        | Description                                                                 |
 | -------------- | --------------------------------------------------------------------------- |
@@ -185,7 +191,7 @@ No need to switch to **django-html** !
 | `iuc`          | For forwards compatibility, this decorator is available as of Django 1.4.2. |
 | `isignals`     | from django.db.models.signals                                               |
 
-### **models - methods**
+### _**models**_ / _**methods**_
 
 | Trigger            | Description                |
 | ------------------ | -------------------------- |
@@ -193,7 +199,7 @@ No need to switch to **django-html** !
 | `receiver`         | Method \- receiver         |
 | `str`              | Method \- \_\_str\_\_      |
 
-### **python - imports**
+### _**python**_ / _**imports**_
 
 | Trigger      | Description                                 |
 | ------------ | ------------------------------------------- |
@@ -202,13 +208,13 @@ No need to switch to **django-html** !
 | `itraceback` | Import \- traceback print exception         |
 | `iul`        | from \_\_future\_\_ import unicode_literals |
 
-### **python - methods**
+### _**python**_ / _**methods**_
 
 | Trigger    | Description             |
 | ---------- | ----------------------- |
 | `__init__` | Methods \- \_\_init\_\_ |
 
-### **templates - filters**
+### _**templates**_ / _**filters**_
 
 | Trigger                | Description                      |
 | ---------------------- | -------------------------------- |
@@ -269,7 +275,7 @@ No need to switch to **django-html** !
 | `\|wordwrap`           | Filter \- wordwrap               |
 | `\|yesno`              | Filter \- yesno:Arg              |
 
-### **templates - imports**
+### _**templates**_ / _**imports**_
 
 | Trigger   | Description    |
 | --------- | -------------- |
@@ -277,7 +283,7 @@ No need to switch to **django-html** !
 | `load`    | Load \- any    |
 | `lstatic` | Load \- static |
 
-### **templates - tags**
+### _**templates**_ / _**tags**_
 
 | Trigger                     | Description                                                   |
 | --------------------------- | ------------------------------------------------------------- |
@@ -287,8 +293,8 @@ No need to switch to **django-html** !
 | `block_paste`               | \{% block %\} \(paste\) \{% endblock %\}                      |
 | `blocktrans`                | \{% blocktrans %\} \{% endblocktrans %\}                      |
 | `blocktrans_paste`          | \{% blocktrans %\} \(paste\) \{% endblocktrans %\}            |
-| `blocktrans_with`           | \{% blocktrans as %\} \{% endblocktrans %\}                   |
-| `blocktrans_with_paste`     | \{% blocktrans as %\} \(paste\) \{% endblocktrans %\}         |
+| `blocktrans_with`           | \{% blocktrans with %\} \{% endblocktrans %\}                 |
+| `blocktrans_with_paste`     | \{% blocktrans with %\} \(paste\) \{% endblocktrans %\}       |
 | `blocktranslate`            | \{% blocktranslate %\} \{% endblocktranslate %\}              |
 | `blocktranslate_paste`      | \{% blocktranslate %\} \(paste\) \{% endblocktranslate %\}    |
 | `blocktranslate_with`       | \{% blocktranslate as %\} \{% endblocktranslate %\}           |
@@ -322,7 +328,7 @@ No need to switch to **django-html** !
 | `if`                        | \{% if %\} \{% endif %\}                                      |
 | `if_paste`                  | \{% if %\} \(paste\) \{% endif %\}                            |
 | `ifchanged`                 | \{% ifchanged %\} \{% endifchanged %\}                        |
-| `ifchanged_paste`           | \{% ifchanged %\} \{% endifchanged %\}                        |
+| `ifchanged_paste`           | \{% ifchanged %\} \(paste\) \{% endifchanged %\}              |
 | `ifelse`                    | \{% if %\} \{% else %\} \{% endif %\}                         |
 | `ifelse_paste`              | \{% if %\} \(paste\) \{% else %\} \{% endif %\}               |
 | `include`                   | \{% include '...' %\}                                         |
@@ -346,10 +352,10 @@ No need to switch to **django-html** !
 | `verbatim`                  | \{% verbatim %\} \{% endverbatim %\}                          |
 | `verbatim_paste`            | \{% verbatim %\} \(paste\) \{% endverbatim %\}                |
 | `widthratio`                | \{% widthratio %\}                                            |
-| `with`                      | \{% with as %\} \{% endwith %\}                               |
-| `with_paste`                | \{% with as %\} \(paste\) \{% endwith %\}                     |
+| `with`                      | \{% with %\} \{% endwith %\}                                  |
+| `with_paste`                | \{% with %\} \(paste\) \{% endwith %\}                        |
 
-### **templates - variables**
+### _**templates**_ / _**variables**_
 
 | Trigger    | Description             |
 | ---------- | ----------------------- |
@@ -357,7 +363,7 @@ No need to switch to **django-html** !
 | `username` | Variable \- username    |
 | `variable` | Variable \- empty       |
 
-### **templatetags - functions**
+### _**templatetags**_ / _**functions**_
 
 | Trigger                   | Description              |
 | ------------------------- | ------------------------ |
@@ -366,14 +372,14 @@ No need to switch to **django-html** !
 | `register_inclusion_tag`  | Custom Tag \- Inclusion  |
 | `register_simple_tag`     | Custom Tag \- Simple     |
 
-### **templatetags - imports**
+### _**templatetags**_ / _**imports**_
 
 | Trigger           | Description                         |
 | ----------------- | ----------------------------------- |
 | `idefaultfilters` | from django.template.defaultfilters |
 | `ilib`            | TemplateTags \- Import Library      |
 
-### **urls - imports**
+### _**urls**_ / _**imports**_
 
 | Trigger         | Description                                          |
 | --------------- | ---------------------------------------------------- |
@@ -383,7 +389,7 @@ No need to switch to **django-html** !
 | `iurls`         | Utility functions for use in URLconfs.               |
 | `iurls`         | Utility functions for use in URLconfs.               |
 
-### **urls - methods**
+### _**urls**_ / _**methods**_
 
 | Trigger       | Description                        |
 | ------------- | ---------------------------------- |
@@ -393,7 +399,7 @@ No need to switch to **django-html** !
 | `url_stack`   | Route \- url\(regex, view, name\)  |
 | `urlpatterns` | urlpatterns = \[\]                 |
 
-### **urls - regexes**
+### _**urls**_ / _**regexes**_
 
 | Trigger      | Description           |
 | ------------ | --------------------- |
@@ -401,7 +407,7 @@ No need to switch to **django-html** !
 | `reslug`     | Regex \- Slug URL     |
 | `reusername` | Regex \- Username URL |
 
-### **views - classes**
+### _**views**_ / _**classes**_
 
 | Trigger        | Description                    |
 | -------------- | ------------------------------ |
@@ -412,14 +418,14 @@ No need to switch to **django-html** !
 | `templateview` | View \- class \(TemplateView\) |
 | `updateview`   | View \- class \(UpdateView\)   |
 
-### **views - functions**
+### _**views**_ / _**functions**_
 
 | Trigger   | Description                       |
 | --------- | --------------------------------- |
 | `view`    | View \- function \(render\)       |
 | `view_hr` | View \- function \(httpResponse\) |
 
-### **views - imports**
+### _**views**_ / _**imports**_
 
 | Trigger         | Description                          |
 | --------------- | ------------------------------------ |
@@ -430,7 +436,7 @@ No need to switch to **django-html** !
 | `ivdcache`      | from django.views.decorators.http    |
 | `ivdhttp`       | from django.views.decorators.http    |
 
-### **views - methods**
+### _**views**_ / _**methods**_
 
 | Trigger            | Description                |
 | ------------------ | -------------------------- |
@@ -478,7 +484,7 @@ Please see our [contributing guide](https://github.com/devmahdi404/code-django/b
 
 ## License
 
-This project is licensed under [MIT](https://github.com/devmahdi404/code-django/blob/main/LICENSE)
+This project is licensed under [MIT License](https://github.com/devmahdi404/code-django/blob/main/LICENSE)
 
 ---
 
