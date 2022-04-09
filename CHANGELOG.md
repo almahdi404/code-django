@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.4] 2022-04-09
+
+### Added
+
+- readme: buymeacoffee icon
+
 ## [0.0.3] 2022-04-08
 
 ### Added

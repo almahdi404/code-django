@@ -8,15 +8,15 @@
 
 Django template language syntax highlighting in **html** !
 
-**Zero config** !
-
-No need to switch to **django-html** !
+**Zero config** , No need to switch to **django-html** !
 
 ![highlighting](images/feature-highlighting.gif)
 
 <br/>
 
-If you love this extension, you could [Buy me a coffee](https://www.buymeacoffee.com/almahdi) ☕
+**If you love this extension, you could**
+
+[<img src='images/bmac-default-blue.webp' width='170' alt='Buy me a coffee' />](https://www.buymeacoffee.com/almahdi)
 
 <br/>
 
