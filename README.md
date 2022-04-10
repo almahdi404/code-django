@@ -141,45 +141,45 @@ Django template language syntax highlighting in **html** !
 
 ### _**models**_ / _**fields**_
 
-| Trigger        | Description                                                                                                                                                     |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `fk`           | Field \- models.ForeignKey \( A many\-to\-one relationship.on_delete will become a required argument in Django 2.0. In older versions it defaults to CASCADE\)  |
-| `m2m`          | Field \- models.ManyToManyField \( A many\-to\-many relationship\)                                                                                              |
-| `marray`       | Field \- models.ArrayField \(PostgreSQL specific model fields\*.A field for storing lists of data\)                                                             |
-| `mauto`        | Field \- models.AutoField \(An IntegerField that automatically increments according to available IDs\)                                                          |
-| `mbigauto`     | Field \- models.BigAutoField \(\[New in Django 1.10.\]A 64\-bit integer, much like an AutoField\)                                                               |
-| `mbigint`      | Field \- models.BigIntegerField \(A 64\-bit integer, much like an IntegerField\)                                                                                |
-| `mbinary`      | Field \- models.BinaryField \(A field to store raw binary data\)                                                                                                |
-| `mbool`        | Field \- models.BooleanField \(A true\/false field\)                                                                                                            |
-| `mchar`        | Field \- models.CharField                                                                                                                                       |
-| `mcoseint`     | Field \- models.CommaSeparatedIntegerField \(This field is deprecated since 1.9 in favor of CharField with validators\)                                         |
-| `mdate`        | Field \- models.DateField \(A date, represented in Python by a datetime.date instance\)                                                                         |
-| `mdatetime`    | Field \- models.DateTimeField \(A date, represented in Python by a datetime.datetime instance\)                                                                 |
-| `mdecimal`     | Field \- models.DecimalField \(A fixed\-precision decimal number, represented in Python by a Decimal instance\)                                                 |
-| `mduration`    | Field \- models.DurationField \(A field for storing periods of time \- modeled in Python by timedelta\)                                                         |
-| `memail`       | Field \- models.EmailField \(A CharField that checks that the value is a valid email address\)                                                                  |
-| `mfile`        | Field \- models.FileField \(A file\-upload field\)                                                                                                              |
-| `mfilepath`    | Field \- models.FilePathField \(A CharField whose choices are limited to the filenames in a certain directory on the filesystem\)                               |
-| `mfloat`       | Field \- models.FloatField \(A floating\-point number represented in Python by a float instance\)                                                               |
-| `mgenericip`   | Field \- models.GenericIPAddressField \(An IPv4 or IPv6 address, in string format\)                                                                             |
-| `mimg`         | Field \- models.ImageField \(Inherits all attributes and methods from FileField, but also validates that the uploaded object is a valid image\)                 |
-| `mint`         | Field \- models.IntegerField \(An integer. Values from \-2147483648 to 2147483647 are safe in all databases supported by Django\)                               |
-| `mip`          | Field \- models.IPAddressField \(This field has been deprecated since version 1.7 in favor of GenericIPAddressField\)                                           |
-| `mjson`        | Field \- models.JSONField \(PostgreSQL specific model fields\*.\[New in Django 1.11.\]A field for storing JSON encoded data\)                                   |
-| `mnullbool`    | Field \- models.NullBooleanField \(Like a BooleanField, but allows NULL as one of the options\)                                                                 |
-| `mo2o`         | Field \- models.OneToOneField \(A one\-to\-one relationship.on_delete will become a required argument in Django 2.0. In older versions it defaults to CASCADE\) |
-| `mphone`       | Field \- models.PhoneNumberField \(external package: django\-phonenumber\-field\)                                                                               |
-| `mposint`      | Field \- models.PositiveIntegerField \(Like an IntegerField, but must be either positive or zero \(\)                                                           |
-| `mpossmallint` | Field \- models.PositiveSmallIntegerField \(Like a PositiveIntegerField, but only allows values under a certain \(database\-dependent\) point\)                 |
-| `mslug`        | Field \- models.SlugField \(A slug is a short label for something, containing only letters, numbers, underscores or hyphens. They’re generally used in URLs\)   |
-| `msmallint`    | Field \- models.SmallIntegerField \(Like an IntegerField, but only allows values under a certain \(database\-dependent\) point\)                                |
-| `mstore`       | Field \- models.HStoreField \(PostgreSQL specific model fields\*.A field for storing key\-value pairs. The Python data type used is a dict\)                    |
-| `mtext`        | Field \- models.TextField \(A large text field\)                                                                                                                |
-| `mtime`        | Field \- models.TimeField \(A time, represented in Python by a datetime.time instance\)                                                                         |
-| `murl`         | Field \- models.URLField \(A CharField for a URL\)                                                                                                              |
-| `musstate`     | Field \- models.USStateField \(external package: django\-localflavor\)                                                                                          |
-| `muuid`        | Field \- models.UUIDField \(A field for storing universally unique identifiers. Uses Python’s UUID class\)                                                      |
-| `mxml`         | Field \- models.XMLField \(All uses of XMLField can be replaced with TextField. This field has been deprecated since version 1.3\)                              |
+| Trigger        | Description                                                     |
+| -------------- | --------------------------------------------------------------- |
+| `fk`           | Field \- models.ForeignKey                                      |
+| `m2m`          | Field \- models.ManyToManyField                                 |
+| `marray`       | Field \- models.ArrayField \*PostgreSQL specific model fields\* |
+| `mauto`        | Field \- models.AutoField                                       |
+| `mbigauto`     | Field \- models.BigAutoField                                    |
+| `mbigint`      | Field \- models.BigIntegerField                                 |
+| `mbinary`      | Field \- models.BinaryField                                     |
+| `mbool`        | Field \- models.BooleanField                                    |
+| `mchar`        | Field \- models.CharField                                       |
+| `mcoseint`     | Field \- models.CommaSeparatedIntegerField                      |
+| `mdate`        | Field \- models.DateField                                       |
+| `mdatetime`    | Field \- models.DateTimeField                                   |
+| `mdecimal`     | Field \- models.DecimalField                                    |
+| `mduration`    | Field \- models.DurationField                                   |
+| `memail`       | Field \- models.EmailField                                      |
+| `mfile`        | Field \- models.FileField                                       |
+| `mfilepath`    | Field \- models.FilePathField                                   |
+| `mfloat`       | Field \- models.FloatField                                      |
+| `mgenericip`   | Field \- models.GenericIPAddressField                           |
+| `mimg`         | Field \- models.ImageField                                      |
+| `mint`         | Field \- models.IntegerField                                    |
+| `mip`          | Field \- models.IPAddressField                                  |
+| `mjson`        | Field \- models.JSONField \*PostgreSQL specific model fields\*  |
+| `mnullbool`    | Field \- models.NullBooleanField                                |
+| `mo2o`         | Field \- models.OneToOneField                                   |
+| `mphone`       | Field \- PhoneNumberField \(django\-phonenumber\-field\)        |
+| `mposint`      | Field \- models.PositiveIntegerField                            |
+| `mpossmallint` | Field \- models.PositiveSmallIntegerField                       |
+| `mslug`        | Field \- models.SlugField                                       |
+| `msmallint`    | Field \- models.SmallIntegerField                               |
+| `mstore`       | Field \- models.HStoreField                                     |
+| `mtext`        | Field \- models.TextField                                       |
+| `mtime`        | Field \- models.TimeField                                       |
+| `murl`         | Field \- models.URLField                                        |
+| `musstate`     | Field \- USStateField \(django\-localflavor\)                   |
+| `muuid`        | Field \- models.UUIDField                                       |
+| `mxml`         | Field \- models.XMLField                                        |
 
 ### _**models**_ / _**imports**_
 
