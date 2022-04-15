@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.6] 2022-04-15
+
+### Fixed
+
+- snippets: comment
+
 ## [0.0.5] 2022-04-10
 
 ### Changed

@@ -109,7 +109,7 @@
   },
   "comment": {
     "prefix": "comment",
-    "body": "{# ${1:TM_SELECTED_TEXT} #}",
+    "body": "{# ${1:$TM_SELECTED_TEXT} #}",
     "description": "{# #}"
   },
   "comment_block": {
