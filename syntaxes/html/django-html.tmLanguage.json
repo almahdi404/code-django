@@ -114,12 +114,12 @@
           "name": "constant.numeric.django"
         },
         {
-          "match": "=",
-          "name": "keyword.operator.assignment.django"
-        },
-        {
           "match": "(==|<=|=>|<|>|!=)",
           "name": "keyword.operator.comparison.django"
+        },
+        {
+          "match": "=",
+          "name": "keyword.operator.assignment.django"
         },
         {
           "match": "(\\+|\\-|\\*\\*|\\*|//|/|%)",

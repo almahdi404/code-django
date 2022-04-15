@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.7] 2022-04-15
+
+### Fixed
+
+- textmate token: keyword.operator.comparison
+
 ## [0.0.6] 2022-04-15
 
 ### Fixed
