@@ -2,11 +2,14 @@
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   "name": "Django HTML",
   "scopeName": "text.django",
-  "injectionSelector": "L:text.html",
+  "injectionSelector": "L:text.html - (comment.line.django, comment.block.django, string.quoted.single.django, string.quoted.double.django)",
   "uuid": "26cb7a03-70e9-4726-90bc-6123are097ea",
   "patterns": [
     {
-      "include": "#comment"
+      "include": "#comment-block"
+    },
+    {
+      "include": "#comment-line"
     },
     {
       "include": "#variable"
@@ -16,7 +19,22 @@
     }
   ],
   "repository": {
-    "comment": {
+    "comment-block": {
+      "name": "comment.block.django",
+      "begin": "{%\\s*comment\\s*(?:\"[^\"]*?\"|'[^']*?')?\\s*%}",
+      "beginCaptures": {
+        "0": {
+          "name": "comment.block.begin.django"
+        }
+      },
+      "end": "{%\\s*endcomment\\s*%}",
+      "endCaptures": {
+        "0": {
+          "name": "comment.block.end.django"
+        }
+      }
+    },
+    "comment-line": {
       "name": "comment.line.django",
       "begin": "{#",
       "beginCaptures": {
