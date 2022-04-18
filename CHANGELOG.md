@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.12] 2022-04-18
+
+### Changed
+
+- readme: feature-highlighting gif regenerated
+
 ## [0.0.11] 2022-04-18
 
 ### Changed
