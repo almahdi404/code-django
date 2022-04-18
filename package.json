@@ -34,7 +34,7 @@
     "format": "prettier . -w",
     "sortSnippets": "node scripts/sortSnippets && prettier ./snippets -w",
     "genSnippets": "node scripts/genSnippets && prettier README.md -w",
-    "clean": "npm run sortSnippets && npm run genSnippets && npm run format"
+    "clean": "npm install && npm run sortSnippets && npm run genSnippets && npm run format"
   },
   "devDependencies": {
     "prettier": "^2.6.1"
