@@ -2,7 +2,7 @@
   "name": "code-django",
   "displayName": "Django Support",
   "description": "Best syntax highlighter and snippets for Django",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "publisher": "almahdi",
   "author": {
     "name": "Al Mahdi"
