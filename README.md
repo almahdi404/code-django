@@ -10,7 +10,7 @@ Django template language syntax highlighting in **html** !
 
 **Zero config** , No need to switch to **django-html** !
 
-![highlighting](images/feature-highlighting.gif)
+![highlighting](images/feature-highlighting-new.gif)
 
 <br/>
 
