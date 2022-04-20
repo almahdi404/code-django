@@ -2,14 +2,11 @@
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   "name": "Django HTML",
   "scopeName": "text.django",
-  "injectionSelector": "L:text.html - (comment.line.django, comment.block.django, string.quoted.single.django, string.quoted.double.django)",
+  "injectionSelector": "L:text.html - (meta.variable.structure.django, meta.tag.structure.django, comment.line.django, string.quoted.single.django, string.quoted.double.django)",
   "uuid": "26cb7a03-70e9-4726-90bc-6123are097ea",
   "patterns": [
     {
-      "include": "#comment-block"
-    },
-    {
-      "include": "#comment-line"
+      "include": "#comment"
     },
     {
       "include": "#variable"
@@ -19,22 +16,7 @@
     }
   ],
   "repository": {
-    "comment-block": {
-      "name": "comment.block.django",
-      "begin": "{%\\s*comment\\s*(?:\"[^\"]*?\"|'[^']*?')?\\s*%}",
-      "beginCaptures": {
-        "0": {
-          "name": "comment.block.begin.django"
-        }
-      },
-      "end": "{%\\s*endcomment\\s*%}",
-      "endCaptures": {
-        "0": {
-          "name": "comment.block.end.django"
-        }
-      }
-    },
-    "comment-line": {
+    "comment": {
       "name": "comment.line.django",
       "begin": "{#",
       "beginCaptures": {
@@ -50,6 +32,7 @@
       }
     },
     "variable": {
+      "name": "meta.variable.structure.django",
       "begin": "{{",
       "beginCaptures": {
         "0": {
@@ -76,6 +59,7 @@
       ]
     },
     "tag": {
+      "name": "meta.tag.structure.django",
       "begin": "{%",
       "beginCaptures": {
         "0": {
@@ -132,6 +116,10 @@
           "name": "constant.numeric.django"
         },
         {
+          "match": "(\\+|\\-|\\*\\*|\\*|//|/|%)",
+          "name": "keyword.operator.arithmetic.django"
+        },
+        {
           "match": "(==|<=|=>|<|>|!=)",
           "name": "keyword.operator.comparison.django"
         },
@@ -140,12 +128,20 @@
           "name": "keyword.operator.assignment.django"
         },
         {
-          "match": "(\\+|\\-|\\*\\*|\\*|//|/|%)",
-          "name": "keyword.operator.arithmetic.django"
+          "match": "\\.",
+          "name": "keyword.operator.getter.django"
         },
         {
-          "match": "(\\.|:|\\||,)",
-          "name": "keyword.operator.django"
+          "match": ",",
+          "name": "keyword.operator.separator.django"
+        },
+        {
+          "match": "\\|",
+          "name": "keyword.operator.filter.django"
+        },
+        {
+          "match": ":",
+          "name": "keyword.operator.argument.django"
         },
         {
           "begin": "\\(",
@@ -217,7 +213,13 @@
             "0": {
               "name": "string.quoted.single.end.django"
             }
-          }
+          },
+          "patterns": [
+            {
+              "name": "constant.character.escape.single-quote.django",
+              "match": "\\\\'"
+            }
+          ]
         },
         {
           "name": "string.quoted.double.django",
@@ -232,7 +234,13 @@
             "0": {
               "name": "string.quoted.double.end.django"
             }
-          }
+          },
+          "patterns": [
+            {
+              "name": "constant.character.escape.double-quote.django",
+              "match": "\\\\\\\""
+            }
+          ]
         }
       ]
     }

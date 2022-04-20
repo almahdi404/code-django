@@ -2,7 +2,7 @@
   "name": "code-django",
   "displayName": "Django Support",
   "description": "Best syntax highlighter and snippets for Django",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "publisher": "almahdi",
   "author": {
     "name": "Al Mahdi"
@@ -34,7 +34,8 @@
     "format": "prettier . -w",
     "sortSnippets": "node scripts/sortSnippets && prettier ./snippets -w",
     "genSnippets": "node scripts/genSnippets && prettier README.md -w",
-    "clean": "npm install && npm run sortSnippets && npm run genSnippets && npm run format"
+    "clean": "npm install && npm run sortSnippets && npm run genSnippets && npm run format",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "devDependencies": {
     "prettier": "^2.6.1"
