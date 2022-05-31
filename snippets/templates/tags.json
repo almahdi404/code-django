@@ -147,7 +147,7 @@
   },
   "elif": {
     "prefix": "elif",
-    "body": "{% elif %}",
+    "body": "{% elif $1 %}",
     "description": "{% elif %}"
   },
   "else": {

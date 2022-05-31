@@ -1,8 +1,8 @@
 {
   "add": {
     "prefix": "|add",
-    "body": "|add",
-    "description": "Filter - add"
+    "body": "|add:",
+    "description": "Filter - add:Arg"
   },
   "addslashes": {
     "prefix": "|addslashes",
@@ -221,7 +221,7 @@
   },
   "truncatechars": {
     "prefix": "|truncatechars",
-    "body": "|truncatechars:1",
+    "body": "|truncatechars:",
     "description": "Filter - truncatechars:Arg"
   },
   "truncatechars_html": {
