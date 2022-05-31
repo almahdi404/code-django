@@ -18,6 +18,8 @@ Django template language syntax highlighting in **html** !
 
 [<img src='images/bmac-default-blue.webp' width='170' alt='Buy me a coffee' />](https://www.buymeacoffee.com/almahdi)
 
+**and support the future development and maintenance of this extension**
+
 <br/>
 
 > 2\. Snippets
