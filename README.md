@@ -128,6 +128,7 @@ Django template language syntax highlighting in **html** !
 | `iappforms`  | Import \- app.forms                            |
 | `iappmodels` | Import \- app.models                           |
 | `iappviews`  | Import \- app.views                            |
+| `ireverse`   | from django.urls import reverse                |
 | `isettings`  | from django.conf import settings               |
 | `iusermodel` | from django.contrib.auth import get_user_model |
 
@@ -220,7 +221,7 @@ Django template language syntax highlighting in **html** !
 
 | Trigger                | Description                      |
 | ---------------------- | -------------------------------- |
-| `\|add`                | Filter \- add                    |
+| `\|add`                | Filter \- add:Arg                |
 | `\|addslashes`         | Filter \- addslashes             |
 | `\|capfirst`           | Filter \- capfirst               |
 | `\|center`             | Filter \- center:Arg             |
@@ -282,8 +283,10 @@ Django template language syntax highlighting in **html** !
 | Trigger   | Description    |
 | --------- | -------------- |
 | `li18n`   | Load \- i18n   |
+| `ll10n`   | Load \- l10n   |
 | `load`    | Load \- any    |
 | `lstatic` | Load \- static |
+| `ltz`     | Load \- tz     |
 
 ### _**templates**_ / _**tags**_
 

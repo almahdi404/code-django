@@ -14,6 +14,11 @@
     "body": "from ${1:AppName} import views",
     "description": "Import - app.views"
   },
+  "ireverse": {
+    "prefix": "ireverse",
+    "body": "from django.urls import reverse",
+    "description": "from django.urls import reverse"
+  },
   "isettings": {
     "prefix": "isettings",
     "body": "from django.conf import settings",

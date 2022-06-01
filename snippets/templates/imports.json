@@ -4,6 +4,11 @@
     "body": "{% load i18n %}",
     "description": "Load - i18n"
   },
+  "ll10n": {
+    "prefix": "ll10n",
+    "body": "{% load l10n %}",
+    "description": "Load - l10n"
+  },
   "load": {
     "prefix": "load",
     "body": "{% load ${1|any,static,cache,i18n,l10n,tz,flatpages,humanize,base,log,admin_list,admin_modify,admin_static,admin_urls|} %}",
@@ -13,5 +18,10 @@
     "prefix": "lstatic",
     "body": "{% load static %}",
     "description": "Load - static"
+  },
+  "ltz": {
+    "prefix": "ltz",
+    "body": "{% load tz %}",
+    "description": "Load - tz"
   }
 }
