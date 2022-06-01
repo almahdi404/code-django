@@ -36,13 +36,13 @@
       "begin": "{{",
       "beginCaptures": {
         "0": {
-          "name": "punctuation.definition.tag.begin.django"
+          "name": "support.type.variable.begin.django"
         }
       },
       "end": "}}",
       "endCaptures": {
         "0": {
-          "name": "punctuation.definition.tag.end.django"
+          "name": "support.type.variable.end.django"
         }
       },
       "patterns": [
@@ -63,13 +63,13 @@
       "begin": "{%",
       "beginCaptures": {
         "0": {
-          "name": "punctuation.definition.tag.begin.django"
+          "name": "support.type.tag.begin.django"
         }
       },
       "end": "%}",
       "endCaptures": {
         "0": {
-          "name": "punctuation.definition.tag.end.django"
+          "name": "support.type.tag.end.django"
         }
       },
       "patterns": [
@@ -132,16 +132,20 @@
           "name": "keyword.operator.getter.django"
         },
         {
-          "match": ",",
-          "name": "keyword.operator.separator.django"
-        },
-        {
           "match": "\\|",
           "name": "keyword.operator.filter.django"
         },
         {
-          "match": ":",
+          "match": "(?<=\\|[a-zA-Z_][a-zA-Z0-9_]*):",
           "name": "keyword.operator.argument.django"
+        },
+        {
+          "match": ":",
+          "name": "punctuation.separator.key-value.django"
+        },
+        {
+          "match": ",",
+          "name": "punctuation.separator.django"
         },
         {
           "begin": "\\(",
