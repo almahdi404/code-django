@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.0] 2022-06-01
+
+- improve(tm-grammer): change tag/var bracket color ([920956d](https://github.com/devmahdi404/code-django/commit/920956d16709a59ec63239c1ecb78100bb0fbaf9))
+- improve(snippets): add new imports ([66f9f8f](https://github.com/devmahdi404/code-django/commit/66f9f8fba493015a8ce00aaa8a403b437185b4f0))
+- fix(snippets): tags and filters ([fc758d9](https://github.com/devmahdi404/code-django/commit/fc758d9aa22792c4c8339ec15c0f2183cc9d7d55))
+- docs(readme): change support section ([d3f906b](https://github.com/devmahdi404/code-django/commit/d3f906b6efba9636badce3fd667cf1a535988877))
+- refactor: remove unwanted script ([0cc851d](https://github.com/devmahdi404/code-django/commit/0cc851d11c1db5264b9e91fc79debb7d10c38c20))
+
 ## [0.0.14] 2022-04-20
 
 ### Fixed
