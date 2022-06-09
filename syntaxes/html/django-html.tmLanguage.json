@@ -81,7 +81,7 @@
     "expression-tag": {
       "patterns": [
         {
-          "match": "(?<={%\\s*)\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b",
+          "match": "(?<={%\\s*)([a-zA-Z_@][a-zA-Z0-9_@]*)",
           "name": "keyword.control.django"
         },
         {
