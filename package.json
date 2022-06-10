@@ -30,7 +30,6 @@
     "django",
     "template",
     "highlighter",
-    "snippets",
     "python"
   ],
   "scripts": {
