@@ -16,6 +16,9 @@
   "bugs": {
     "url": "https://github.com/devmahdi404/code-django/issues"
   },
+  "sponsor": {
+    "url": "https://www.buymeacoffee.com/almahdi"
+  },
   "engines": {
     "vscode": "^1.65.0"
   },
