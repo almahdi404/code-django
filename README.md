@@ -1,16 +1,18 @@
 # Django support for Visual Studio Code
 
-💥 The extension you were waiting for 💥
+**Zero config** , No need to switch to **django-html** !
+
+![highlighting](images/feature-highlighting-n-jump.gif)
 
 ## Features
 
 > 1\. Syntax Highlighting
 
-Django template language syntax highlighting in **html** !
+**Django template language** syntax highlighting in **html** !
 
-**Zero config** , No need to switch to **django-html** !
+> 2\. Jump to template
 
-![highlighting](images/feature-highlighting-new.gif)
+<kbd>(ctrl + click)</kbd> on link to jump to template from `html` or `python`
 
 <br/>
 
@@ -22,7 +24,7 @@ Django template language syntax highlighting in **html** !
 
 <br/>
 
-> 2\. Snippets
+> 3\. Snippets
 
 <!-- StartSnippets -->
 

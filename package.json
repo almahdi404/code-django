@@ -36,11 +36,34 @@
     "format": "prettier . -w",
     "sortSnippets": "node scripts/sortSnippets && prettier ./snippets -w",
     "genSnippets": "node scripts/genSnippets && prettier README.md -w",
-    "clean": "npm install && npm run sortSnippets && npm run genSnippets && npm run format"
+    "clean": "npm install && npm run sortSnippets && npm run genSnippets && npm run format",
+    "lint": "eslint src --ext ts",
+    "esbuild-watch": "node esbuild.config.js watch",
+    "esbuild-build": "node esbuild.config.js build",
+    "webpack-build-web": "webpack",
+    "build": "npm run esbuild-build && npm run webpack-build-web"
   },
   "devDependencies": {
-    "prettier": "^2.6.1"
+    "@types/node": "^16.11.39",
+    "@types/vscode": "~1.65.0",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "esbuild": "^0.14.43",
+    "eslint": "^8.17.0",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "prettier": "^2.6.2",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.7.3",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2"
   },
+  "activationEvents": [
+    "workspaceContains:manage.py",
+    "workspaceContains:apps.py",
+    "onLanguage:django-html"
+  ],
+  "main": "./out/extension.js",
+  "browser": "./out/extension.browser.js",
   "contributes": {
     "languages": [
       {
