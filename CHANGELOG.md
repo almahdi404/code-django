@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.0] 2022-06-12
+
+- feat: jump to template ([50aaec3](https://github.com/devmahdi404/code-django/commit/50aaec33b603630cf0d54231e8d995d1cb0d4833))
+- fix(snippet): tag blocktrans body ([9a6b00f](https://github.com/devmahdi404/code-django/commit/9a6b00f92a0aa596b5158d77b9d0045f43d52a1c))
+- chore: add bmac link to github funding ([ba0db19](https://github.com/devmahdi404/code-django/commit/ba0db19b8b399c946b586df29261f74989a99ed2))
+- chore(pkg): remove snippets keyword ([b8eaa87](https://github.com/devmahdi404/code-django/commit/b8eaa8762dac17068665537b4d2fb469bcab2edf))
+- chore: add vscode sponsor link ([b8214e5](https://github.com/devmahdi404/code-django/commit/b8214e532b5220754f7b4e0983142063c8af735a))
+- fix(tm-grammer): allow @ in tag name ([da56482](https://github.com/devmahdi404/code-django/commit/da564828e9c0ac905d2267e62b5219c50e58a253))
+
 ## [0.1.0] 2022-06-01
 
 - improve(tm-grammer): change tag/var bracket color ([920956d](https://github.com/devmahdi404/code-django/commit/920956d16709a59ec63239c1ecb78100bb0fbaf9))
