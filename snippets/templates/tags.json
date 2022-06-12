@@ -38,7 +38,7 @@
   "blocktrans": {
     "prefix": "blocktrans",
     "body": [
-      "{% blocktrans ${1:trimmed %}",
+      "{% blocktrans ${1:trimmed} %}",
       "\t${2:$TM_SELECTED_TEXT}",
       "{% endblocktrans %}"
     ],
@@ -47,7 +47,7 @@
   "blocktrans_paste": {
     "prefix": "blocktrans_paste",
     "body": [
-      "{% blocktrans ${1:trimmed %}",
+      "{% blocktrans ${1:trimmed} %}",
       "\t${2:$CLIPBOARD}",
       "{% endblocktrans %}"
     ],
