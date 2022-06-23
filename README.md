@@ -12,7 +12,7 @@
 
 > 2\. Jump to template
 
-<kbd>(ctrl + click)</kbd> on link to jump to template from `html` or `python`
+<kbd>(ctrl + click)</kbd> on **path** to jump to template from `html` or `python` file
 
 <br/>
 
@@ -25,6 +25,10 @@
 <br/>
 
 > 3\. Snippets
+
+<details>
+
+<summary>Click to expand</summary>
 
 <!-- StartSnippets -->
 
@@ -453,6 +457,10 @@
 
 <!-- EndSnippets -->
 
+</details>
+
+<br/>
+
 ## Installation
 
 1. From vscode
@@ -463,7 +471,7 @@
 
 2. From marketplace
 
-   - Go to [Django Support](https://marketplace.visualstudio.com/items?itemName=almahdi.code-django) by (**Al Mahdi**)
+   - Go to the marketplace page of [Django Support](https://marketplace.visualstudio.com/items?itemName=almahdi.code-django) by (**Al Mahdi**)
    - Click `Install`
 
 3. From cli
