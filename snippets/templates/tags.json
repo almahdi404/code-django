@@ -155,6 +155,11 @@
     "body": "{% else %}",
     "description": "{% else %}"
   },
+  "empty": {
+    "prefix": "empty",
+    "body": "{% empty %}",
+    "description": "{% empty %}"
+  },
   "endautoescape": {
     "prefix": "endautoescape",
     "body": "{% endautoescape %}",

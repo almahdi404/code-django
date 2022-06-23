@@ -318,6 +318,7 @@
 | `debug`                     | \{% debug %\}                                                 |
 | `elif`                      | \{% elif %\}                                                  |
 | `else`                      | \{% else %\}                                                  |
+| `empty`                     | \{% empty %\}                                                 |
 | `endautoescape`             | \{% endautoescape %\}                                         |
 | `endblock`                  | \{% endblock %\}                                              |
 | `endcomment`                | \{% endcomment %\}                                            |
