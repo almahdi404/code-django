@@ -5,12 +5,11 @@ const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 /** @type {import('webpack').Configuration} */
 module.exports = {
   target: "webworker",
-  mode: "production",
   entry: "./src/extension.ts",
   output: {
     path: path.resolve(__dirname, "out"),
     filename: "extension.browser.js",
-    libraryTarget: "commonjs2",
+    libraryTarget: "commonjs",
   },
   plugins: [new NodePolyfillPlugin()],
   externals: {
@@ -18,6 +17,7 @@ module.exports = {
   },
   resolve: {
     extensions: [".ts", ".js"],
+    fallback: { path: require.resolve("path-browserify") },
   },
   module: {
     rules: [

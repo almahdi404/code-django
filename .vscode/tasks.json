@@ -43,6 +43,19 @@
         "reveal": "never",
         "group": "watchers"
       }
+    },
+    {
+      "type": "npm",
+      "script": "webpack-watch-web",
+      "problemMatcher": ["$ts-webpack-watch"],
+      "isBackground": true,
+      "group": {
+        "kind": "build"
+      },
+      "presentation": {
+        "reveal": "never",
+        "group": "watchers"
+      }
     }
   ]
 }

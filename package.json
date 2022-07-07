@@ -40,7 +40,8 @@
     "lint": "eslint src --ext ts",
     "esbuild-watch": "node esbuild.config.js watch",
     "esbuild-build": "node esbuild.config.js build",
-    "webpack-build-web": "webpack",
+    "webpack-watch-web": "webpack watch --mode development --devtool nosources-source-map",
+    "webpack-build-web": "webpack --mode production",
     "build": "npm run esbuild-build && npm run webpack-build-web"
   },
   "devDependencies": {
