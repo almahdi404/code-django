@@ -9,7 +9,7 @@
       "problemMatcher": {
         "source": "typescript",
         "fileLocation": ["relative", "${workspaceFolder}"],
-        "applyTo": "closedDocuments",
+        "applyTo": "allDocuments",
         "severity": "error",
         "pattern": [
           {
