@@ -4,12 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [0.3.0] 2022-07-07
 
-build(wepack): fix and change config ([74161c8](https://github.com/devmahdi404/code-django/commit/74161c8869acfabf8310f4a23ccdccaa550c616b))
-chore(vscode): problemWatcher applyTo allDocuments ([c92837a](https://github.com/devmahdi404/code-django/commit/c92837a44f2d4f33279bc44464db699e7043d7c1))
-fix(snippets): form method body quote ([fd0218d](https://github.com/devmahdi404/code-django/commit/fd0218d5a749d795563e400f420148c0a5371f34))
-improve(snippets): add empty tag ([5d8825d](https://github.com/devmahdi404/code-django/commit/5d8825d0e1c6cf0fd66496f8069352863e3ce805))
-docs(readme): update layout and texts ([357bfff](https://github.com/devmahdi404/code-django/commit/357bfff7c52ccbe6376e32eadb0023ff85a1207c))
-build: ignore all config scripts ([b524d46](https://github.com/devmahdi404/code-django/commit/b524d4606dbcf4d34d5971f97061acd9c82819ab))
+- build(wepack): fix and change config ([74161c8](https://github.com/devmahdi404/code-django/commit/74161c8869acfabf8310f4a23ccdccaa550c616b))
+- chore(vscode): problemWatcher applyTo allDocuments ([c92837a](https://github.com/devmahdi404/code-django/commit/c92837a44f2d4f33279bc44464db699e7043d7c1))
+- fix(snippets): form method body quote ([fd0218d](https://github.com/devmahdi404/code-django/commit/fd0218d5a749d795563e400f420148c0a5371f34))
+- improve(snippets): add empty tag ([5d8825d](https://github.com/devmahdi404/code-django/commit/5d8825d0e1c6cf0fd66496f8069352863e3ce805))
+- docs(readme): update layout and texts ([357bfff](https://github.com/devmahdi404/code-django/commit/357bfff7c52ccbe6376e32eadb0023ff85a1207c))
+- build: ignore all config scripts ([b524d46](https://github.com/devmahdi404/code-django/commit/b524d4606dbcf4d34d5971f97061acd9c82819ab))
 
 ## [0.2.0] 2022-06-12
 
