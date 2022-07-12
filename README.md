@@ -12,7 +12,7 @@
 
 > 2\. Jump to template
 
-<kbd>(ctrl + click)</kbd> on **path** to jump to template from `html` or `python` file
+<kbd>(ctrl+click)</kbd> on **path** to jump to template from `html` or `python` file
 
 <br/>
 
@@ -24,7 +24,11 @@
 
 <br/>
 
-> 3\. Snippets
+> 3\. Comment
+
+Press <kbd>(ctrl+shift+/)</kbd> to comment the whole line **or** first select the part you want to comment
+
+> 4\. Snippets
 
 <details>
 

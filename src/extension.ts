@@ -1,5 +1,6 @@
 import * as vscode from "vscode";
 import { TemplateLinkProvider } from "./providers/documentLinkProviders";
+import { commentLine } from "./commands/templateComment";
 
 export async function activate(
   context: vscode.ExtensionContext
@@ -9,6 +10,13 @@ export async function activate(
     vscode.languages.registerDocumentLinkProvider(
       templateLink.selector,
       templateLink
+    )
+  );
+
+  context.subscriptions.push(
+    vscode.commands.registerTextEditorCommand(
+      "code-django.commentLine",
+      commentLine
     )
   );
 }
