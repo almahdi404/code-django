@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.0] 2022-07-12
+
+- feat: django template comment ([7a6a48](https://github.com/devmahdi404/code-django/commit/7a6a48590d995d7dc9674c4886c253a79ce8e015))
+- chore: fix changelog ([3f950d](https://github.com/devmahdi404/code-django/commit/3f950df5c91010f8aa0a80612d5556506f558ab0))
+
 ## [0.3.0] 2022-07-07
 
 - build(wepack): fix and change config ([74161c8](https://github.com/devmahdi404/code-django/commit/74161c8869acfabf8310f4a23ccdccaa550c616b))
