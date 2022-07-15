@@ -26,9 +26,7 @@
 
 > 3\. Comment
 
-Select the line and press <kbd>(ctrl+shift+/)</kbd>or<kbd>(cmd+shift+/)</kbd> to comment the whole line
-
-Or select a part you want to comment and press <kbd>(ctrl+shift+/)</kbd>or<kbd>(cmd+shift+/)</kbd> to comment that part
+Press <kbd>(ctrl+shift+/)</kbd>or<kbd>(cmd+shift+/)</kbd> to comment and uncomment
 
 > 4\. Snippets
 
