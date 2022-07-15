@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.5.0] 2022-07-15
+
+- improve(comment): support multi line commenting ([fd5f30](https://github.com/devmahdi404/code-django/commit/fd5f30d39f1b33d2467d396270630bd9ece3b4b3))
+- docs(readme): improve comment feature section ([6bbeab](https://github.com/devmahdi404/code-django/commit/6bbeabc3d67456c7a9e8c0327bf08a6fb789dedd))
+- improve(comment): support multi selection commenting ([d18385](https://github.com/devmahdi404/code-django/commit/d183857ab1841d21ebc9eedf49fc5cbc5216d08e))
+
 ## [0.4.0] 2022-07-12
 
 - feat: django template comment ([7a6a48](https://github.com/devmahdi404/code-django/commit/7a6a48590d995d7dc9674c4886c253a79ce8e015))
