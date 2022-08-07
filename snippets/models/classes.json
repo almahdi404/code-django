@@ -1,6 +1,6 @@
 {
-  "Model": {
-    "prefix": "Model",
+  "model": {
+    "prefix": "model",
     "body": [
       "class ${1:ModelName}(models.Model):",
       "    '''${2:Model definition for $1}.'''",
@@ -16,8 +16,8 @@
     ],
     "description": "Class - models.Model"
   },
-  "ModelFull": {
-    "prefix": "ModelFull",
+  "modelfull": {
+    "prefix": "modelfull",
     "body": [
       "class ${1:ModelName}(models.Model):",
       "    '''${2:Model definition for $1}.'''",
@@ -41,8 +41,8 @@
     ],
     "description": "Class - models.Model (full)"
   },
-  "ModelMixin": {
-    "prefix": "ModelMixin",
+  "modelmixin": {
+    "prefix": "modelmixin",
     "body": [
       "class $1Mixin(models.Model):",
       "    $0",
