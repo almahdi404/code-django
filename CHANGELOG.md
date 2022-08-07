@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.5.1] 2022-08-07
+
+- fix(snippets): use lowercase in models/classes prefix ([77452c](https://github.com/almahdi404/code-django/commit/77452ce099ba6114896720cc5d7926096802e98d))
+
+- chore: update github username ([fb3696](https://github.com/almahdi404/code-django/commit/fb3696d0d448044f81a4470fa9ac0fef0750d0fa))
+
 ## [0.5.0] 2022-07-15
 
 - improve(comment): support multi line commenting ([fd5f30](https://github.com/almahdi404/code-django/commit/fd5f30d39f1b33d2467d396270630bd9ece3b4b3))

@@ -1,4 +1,13 @@
 {
+  "manager": {
+    "prefix": "manager",
+    "body": [
+      "class $1Manager(models.Manager):",
+      "    def get_queryset(self):",
+      "        return super ($1Manager, self).get_queryset().${2|filter,exclude,order_by,distinct,reverse|}($3)"
+    ],
+    "description": "Class - models.Manager"
+  },
   "model": {
     "prefix": "model",
     "body": [
@@ -51,15 +60,6 @@
       "        abstract = True"
     ],
     "description": "Class - models.Model (mixin)"
-  },
-  "manager": {
-    "prefix": "manager",
-    "body": [
-      "class $1Manager(models.Manager):",
-      "    def get_queryset(self):",
-      "        return super ($1Manager, self).get_queryset().${2|filter,exclude,order_by,distinct,reverse|}($3)"
-    ],
-    "description": "Class - models.Manager"
   },
   "queryset": {
     "prefix": "queryset",

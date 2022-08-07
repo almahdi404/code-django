@@ -146,10 +146,10 @@ Press <kbd>(ctrl+shift+/)</kbd>or<kbd>(cmd+shift+/)</kbd> to comment and uncomme
 
 | Trigger      | Description                     |
 | ------------ | ------------------------------- |
-| `Model`      | Class \- models.Model           |
-| `ModelFull`  | Class \- models.Model \(full\)  |
-| `ModelMixin` | Class \- models.Model \(mixin\) |
 | `manager`    | Class \- models.Manager         |
+| `model`      | Class \- models.Model           |
+| `modelfull`  | Class \- models.Model \(full\)  |
+| `modelmixin` | Class \- models.Model \(mixin\) |
 | `queryset`   | Class \- models.QuerySet        |
 
 ### _**models**_ / _**fields**_
