@@ -4,40 +4,40 @@ All notable changes to this project will be documented in this file.
 
 ## [0.5.0] 2022-07-15
 
-- improve(comment): support multi line commenting ([fd5f30](https://github.com/devmahdi404/code-django/commit/fd5f30d39f1b33d2467d396270630bd9ece3b4b3))
-- docs(readme): improve comment feature section ([6bbeab](https://github.com/devmahdi404/code-django/commit/6bbeabc3d67456c7a9e8c0327bf08a6fb789dedd))
-- improve(comment): support multi selection commenting ([d18385](https://github.com/devmahdi404/code-django/commit/d183857ab1841d21ebc9eedf49fc5cbc5216d08e))
+- improve(comment): support multi line commenting ([fd5f30](https://github.com/almahdi404/code-django/commit/fd5f30d39f1b33d2467d396270630bd9ece3b4b3))
+- docs(readme): improve comment feature section ([6bbeab](https://github.com/almahdi404/code-django/commit/6bbeabc3d67456c7a9e8c0327bf08a6fb789dedd))
+- improve(comment): support multi selection commenting ([d18385](https://github.com/almahdi404/code-django/commit/d183857ab1841d21ebc9eedf49fc5cbc5216d08e))
 
 ## [0.4.0] 2022-07-12
 
-- feat: django template comment ([7a6a48](https://github.com/devmahdi404/code-django/commit/7a6a48590d995d7dc9674c4886c253a79ce8e015))
-- chore: fix changelog ([3f950d](https://github.com/devmahdi404/code-django/commit/3f950df5c91010f8aa0a80612d5556506f558ab0))
+- feat: django template comment ([7a6a48](https://github.com/almahdi404/code-django/commit/7a6a48590d995d7dc9674c4886c253a79ce8e015))
+- chore: fix changelog ([3f950d](https://github.com/almahdi404/code-django/commit/3f950df5c91010f8aa0a80612d5556506f558ab0))
 
 ## [0.3.0] 2022-07-07
 
-- build(wepack): fix and change config ([74161c8](https://github.com/devmahdi404/code-django/commit/74161c8869acfabf8310f4a23ccdccaa550c616b))
-- chore(vscode): problemWatcher applyTo allDocuments ([c92837a](https://github.com/devmahdi404/code-django/commit/c92837a44f2d4f33279bc44464db699e7043d7c1))
-- fix(snippets): form method body quote ([fd0218d](https://github.com/devmahdi404/code-django/commit/fd0218d5a749d795563e400f420148c0a5371f34))
-- improve(snippets): add empty tag ([5d8825d](https://github.com/devmahdi404/code-django/commit/5d8825d0e1c6cf0fd66496f8069352863e3ce805))
-- docs(readme): update layout and texts ([357bfff](https://github.com/devmahdi404/code-django/commit/357bfff7c52ccbe6376e32eadb0023ff85a1207c))
-- build: ignore all config scripts ([b524d46](https://github.com/devmahdi404/code-django/commit/b524d4606dbcf4d34d5971f97061acd9c82819ab))
+- build(wepack): fix and change config ([74161c8](https://github.com/almahdi404/code-django/commit/74161c8869acfabf8310f4a23ccdccaa550c616b))
+- chore(vscode): problemWatcher applyTo allDocuments ([c92837a](https://github.com/almahdi404/code-django/commit/c92837a44f2d4f33279bc44464db699e7043d7c1))
+- fix(snippets): form method body quote ([fd0218d](https://github.com/almahdi404/code-django/commit/fd0218d5a749d795563e400f420148c0a5371f34))
+- improve(snippets): add empty tag ([5d8825d](https://github.com/almahdi404/code-django/commit/5d8825d0e1c6cf0fd66496f8069352863e3ce805))
+- docs(readme): update layout and texts ([357bfff](https://github.com/almahdi404/code-django/commit/357bfff7c52ccbe6376e32eadb0023ff85a1207c))
+- build: ignore all config scripts ([b524d46](https://github.com/almahdi404/code-django/commit/b524d4606dbcf4d34d5971f97061acd9c82819ab))
 
 ## [0.2.0] 2022-06-12
 
-- feat: jump to template ([50aaec3](https://github.com/devmahdi404/code-django/commit/50aaec33b603630cf0d54231e8d995d1cb0d4833))
-- fix(snippet): tag blocktrans body ([9a6b00f](https://github.com/devmahdi404/code-django/commit/9a6b00f92a0aa596b5158d77b9d0045f43d52a1c))
-- chore: add bmac link to github funding ([ba0db19](https://github.com/devmahdi404/code-django/commit/ba0db19b8b399c946b586df29261f74989a99ed2))
-- chore(pkg): remove snippets keyword ([b8eaa87](https://github.com/devmahdi404/code-django/commit/b8eaa8762dac17068665537b4d2fb469bcab2edf))
-- chore: add vscode sponsor link ([b8214e5](https://github.com/devmahdi404/code-django/commit/b8214e532b5220754f7b4e0983142063c8af735a))
-- fix(tm-grammer): allow @ in tag name ([da56482](https://github.com/devmahdi404/code-django/commit/da564828e9c0ac905d2267e62b5219c50e58a253))
+- feat: jump to template ([50aaec3](https://github.com/almahdi404/code-django/commit/50aaec33b603630cf0d54231e8d995d1cb0d4833))
+- fix(snippet): tag blocktrans body ([9a6b00f](https://github.com/almahdi404/code-django/commit/9a6b00f92a0aa596b5158d77b9d0045f43d52a1c))
+- chore: add bmac link to github funding ([ba0db19](https://github.com/almahdi404/code-django/commit/ba0db19b8b399c946b586df29261f74989a99ed2))
+- chore(pkg): remove snippets keyword ([b8eaa87](https://github.com/almahdi404/code-django/commit/b8eaa8762dac17068665537b4d2fb469bcab2edf))
+- chore: add vscode sponsor link ([b8214e5](https://github.com/almahdi404/code-django/commit/b8214e532b5220754f7b4e0983142063c8af735a))
+- fix(tm-grammer): allow @ in tag name ([da56482](https://github.com/almahdi404/code-django/commit/da564828e9c0ac905d2267e62b5219c50e58a253))
 
 ## [0.1.0] 2022-06-01
 
-- improve(tm-grammer): change tag/var bracket color ([920956d](https://github.com/devmahdi404/code-django/commit/920956d16709a59ec63239c1ecb78100bb0fbaf9))
-- improve(snippets): add new imports ([66f9f8f](https://github.com/devmahdi404/code-django/commit/66f9f8fba493015a8ce00aaa8a403b437185b4f0))
-- fix(snippets): tags and filters ([fc758d9](https://github.com/devmahdi404/code-django/commit/fc758d9aa22792c4c8339ec15c0f2183cc9d7d55))
-- docs(readme): change support section ([d3f906b](https://github.com/devmahdi404/code-django/commit/d3f906b6efba9636badce3fd667cf1a535988877))
-- refactor: remove unwanted script ([0cc851d](https://github.com/devmahdi404/code-django/commit/0cc851d11c1db5264b9e91fc79debb7d10c38c20))
+- improve(tm-grammer): change tag/var bracket color ([920956d](https://github.com/almahdi404/code-django/commit/920956d16709a59ec63239c1ecb78100bb0fbaf9))
+- improve(snippets): add new imports ([66f9f8f](https://github.com/almahdi404/code-django/commit/66f9f8fba493015a8ce00aaa8a403b437185b4f0))
+- fix(snippets): tags and filters ([fc758d9](https://github.com/almahdi404/code-django/commit/fc758d9aa22792c4c8339ec15c0f2183cc9d7d55))
+- docs(readme): change support section ([d3f906b](https://github.com/almahdi404/code-django/commit/d3f906b6efba9636badce3fd667cf1a535988877))
+- refactor: remove unwanted script ([0cc851d](https://github.com/almahdi404/code-django/commit/0cc851d11c1db5264b9e91fc79debb7d10c38c20))
 
 ## [0.0.14] 2022-04-20
 

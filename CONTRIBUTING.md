@@ -3,7 +3,7 @@
 ### Setup
 
 ```properties
-git clone https://github.com/devmahdi404/code-django
+git clone https://github.com/almahdi404/code-django
 cd code-django
 npm install
 code .

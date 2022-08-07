@@ -490,13 +490,13 @@ Currently no known issues
 
 ## Release Notes
 
-See all the release notes here in [Changelog](https://github.com/devmahdi404/code-django/blob/main/CHANGELOG.md)
+See all the release notes here in [Changelog](https://github.com/almahdi404/code-django/blob/main/CHANGELOG.md)
 
 ## Contributing
 
 Pull requests are welcome.
 
-Please see our [contributing guide](https://github.com/devmahdi404/code-django/blob/main/CONTRIBUTING.md) for more details
+Please see our [contributing guide](https://github.com/almahdi404/code-django/blob/main/CONTRIBUTING.md) for more details
 
 ## Credits
 
@@ -504,7 +504,7 @@ Please see our [contributing guide](https://github.com/devmahdi404/code-django/b
 
 ## License
 
-This project is licensed under [MIT License](https://github.com/devmahdi404/code-django/blob/main/LICENSE)
+This project is licensed under [MIT License](https://github.com/almahdi404/code-django/blob/main/LICENSE)
 
 ---
 
