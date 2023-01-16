@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.5.2] 2023-01-16
+
+- fix: activationEvents ([eebec2](https://github.com/almahdi404/code-django/commit/eebec2441e1e65e766931c1e44ede6ae2f53cc66))
+
+- improve(snippets): add 'm' prefix ([4dd1e7](https://github.com/almahdi404/code-django/commit/4dd1e719f2bb2e539a1b06239e473faef13bc1a7))
+
 ## [0.5.1] 2022-08-07
 
 - fix(snippets): use lowercase in models/classes prefix ([77452c](https://github.com/almahdi404/code-django/commit/77452ce099ba6114896720cc5d7926096802e98d))
