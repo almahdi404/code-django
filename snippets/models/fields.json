@@ -1,14 +1,4 @@
 {
-  "fk": {
-    "prefix": "fk",
-    "body": "${1:field_name} = models.ForeignKey(${2:ModelName}, on_delete=models.${3|CASCADE,PROTECT,SET_NULL,SET_DEFAULT,SET(),DO_NOTHING|})",
-    "description": "Field - models.ForeignKey"
-  },
-  "m2m": {
-    "prefix": "m2m",
-    "body": "${1:field_name} = models.ManyToManyField(${2:ModelName})",
-    "description": "Field - models.ManyToManyField"
-  },
   "marray": {
     "prefix": "marray",
     "body": "${1:field_name} = models.ArrayField()",
@@ -84,6 +74,11 @@
     "body": "${1:field_name} = models.FilePathField($2, path=${3:None}, match=${4:None}, recursive=${5:recursive}, max_length=${6:100})",
     "description": "Field - models.FilePathField"
   },
+  "mfk": {
+    "prefix": "mfk",
+    "body": "${1:field_name} = models.ForeignKey(${2:ModelName}, on_delete=models.${3|CASCADE,PROTECT,SET_NULL,SET_DEFAULT,SET(),DO_NOTHING|})",
+    "description": "Field - models.ForeignKey"
+  },
   "mfloat": {
     "prefix": "mfloat",
     "body": "${1:field_name} = models.FloatField($2)",
@@ -113,6 +108,11 @@
     "prefix": "mjson",
     "body": "${1:field_name} = models.JSONField()",
     "description": "Field - models.JSONField *PostgreSQL specific model fields*"
+  },
+  "mm2m": {
+    "prefix": "mm2m",
+    "body": "${1:field_name} = models.ManyToManyField(${2:ModelName})",
+    "description": "Field - models.ManyToManyField"
   },
   "mnullbool": {
     "prefix": "mnullbool",

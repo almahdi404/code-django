@@ -156,8 +156,6 @@ Press <kbd>(ctrl+shift+/)</kbd>or<kbd>(cmd+shift+/)</kbd> to comment and uncomme
 
 | Trigger        | Description                                                     |
 | -------------- | --------------------------------------------------------------- |
-| `fk`           | Field \- models.ForeignKey                                      |
-| `m2m`          | Field \- models.ManyToManyField                                 |
 | `marray`       | Field \- models.ArrayField \*PostgreSQL specific model fields\* |
 | `mauto`        | Field \- models.AutoField                                       |
 | `mbigauto`     | Field \- models.BigAutoField                                    |
@@ -173,12 +171,14 @@ Press <kbd>(ctrl+shift+/)</kbd>or<kbd>(cmd+shift+/)</kbd> to comment and uncomme
 | `memail`       | Field \- models.EmailField                                      |
 | `mfile`        | Field \- models.FileField                                       |
 | `mfilepath`    | Field \- models.FilePathField                                   |
+| `mfk`          | Field \- models.ForeignKey                                      |
 | `mfloat`       | Field \- models.FloatField                                      |
 | `mgenericip`   | Field \- models.GenericIPAddressField                           |
 | `mimg`         | Field \- models.ImageField                                      |
 | `mint`         | Field \- models.IntegerField                                    |
 | `mip`          | Field \- models.IPAddressField                                  |
 | `mjson`        | Field \- models.JSONField \*PostgreSQL specific model fields\*  |
+| `mm2m`         | Field \- models.ManyToManyField                                 |
 | `mnullbool`    | Field \- models.NullBooleanField                                |
 | `mo2o`         | Field \- models.OneToOneField                                   |
 | `mphone`       | Field \- PhoneNumberField \(django\-phonenumber\-field\)        |
