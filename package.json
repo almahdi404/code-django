@@ -59,8 +59,8 @@
     "webpack-cli": "^4.9.2"
   },
   "activationEvents": [
-    "workspaceContains:manage.py",
-    "workspaceContains:apps.py",
+    "workspaceContains:**/manage.py",
+    "workspaceContains:**/apps.py",
     "onLanguage:django-html"
   ],
   "main": "./out/extension.js",
