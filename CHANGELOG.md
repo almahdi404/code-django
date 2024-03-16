@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.5.4] 2024-03-16
+
+- chore: update sponsor url ([b9ca1b](https://github.com/almahdi404/code-django/commit/b9ca1bdbe89640b08512c7fe9caa4cd1f3019c86))
+
 ## [0.5.3] 2024-03-16
 
 - fix(syntax): allow dash(-) in tag name ([5b53bc](https://github.com/almahdi404/code-django/commit/5b53bcd4f95a15bd777e35e9d6d1620db19a73a1))
