@@ -60,8 +60,7 @@
   },
   "activationEvents": [
     "workspaceContains:**/manage.py",
-    "workspaceContains:**/apps.py",
-    "onLanguage:django-html"
+    "workspaceContains:**/apps.py"
   ],
   "main": "./out/extension.js",
   "browser": "./out/extension.browser.js",
