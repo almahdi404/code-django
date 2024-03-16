@@ -18,7 +18,7 @@
 
 **If you love this extension, you could**
 
-[<img src='images/bmac-default-blue.webp' width='170' alt='Buy me a coffee' />](https://www.buymeacoffee.com/almahdi)
+[<img src='images/bmac-default-blue.webp' width='170' alt='Buy me a coffee' />](https://www.buymeacoffee.com/almahdi404)
 
 **and support the future development and maintenance of this extension**
 
