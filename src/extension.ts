@@ -1,6 +1,6 @@
 import * as vscode from "vscode";
 import { TemplateLinkProvider } from "./providers/documentLinkProviders";
-import { commentLine } from "./commands/templateComment";
+import { toggleComment } from "./commands/templateComment";
 
 export async function activate(
   context: vscode.ExtensionContext
@@ -15,8 +15,8 @@ export async function activate(
 
   context.subscriptions.push(
     vscode.commands.registerTextEditorCommand(
-      "code-django.commentLine",
-      commentLine
+      "code-django.toggleComment",
+      toggleComment
     )
   );
 }

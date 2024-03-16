@@ -1,7 +1,7 @@
 import * as vscode from "vscode";
 import { getEOL } from "../utils";
 
-export async function commentLine(
+export async function toggleComment(
   editor: vscode.TextEditor,
   editorEdit: vscode.TextEditorEdit
 ) {

@@ -109,7 +109,7 @@
     ],
     "keybindings": [
       {
-        "command": "code-django.commentLine",
+        "command": "code-django.toggleComment",
         "key": "ctrl+shift+/",
         "mac": "cmd+shift+/",
         "when": "editorTextFocus && editorLangId == html"
