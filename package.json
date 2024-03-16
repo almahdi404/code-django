@@ -2,7 +2,7 @@
   "name": "code-django",
   "displayName": "Django Support",
   "description": "The ultimate django framework support",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "publisher": "almahdi",
   "author": {
     "name": "Al Mahdi"

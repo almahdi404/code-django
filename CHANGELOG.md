@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.5.3] 2024-03-16
+
+- fix(syntax): allow dash(-) in tag name ([5b53bc](https://github.com/almahdi404/code-django/commit/5b53bcd4f95a15bd777e35e9d6d1620db19a73a1))
+
+- chore: change extension description ([4f15b8](https://github.com/almahdi404/code-django/commit/4f15b8abfdadccda3d3237f0c363bc82904edefc))
+
+- chore: remove unwanted activation event ([6a4da4](https://github.com/almahdi404/code-django/commit/6a4da4da7c11f81877900b4dcc79781324544fd3))
+
+- refac: change comment func name ([1d5bd8](https://github.com/almahdi404/code-django/commit/1d5bd84689cf0152c5086bd1a50f104d0ccc8c34))
+
+- chore: update sponsor url ([a99e07](https://github.com/almahdi404/code-django/commit/a99e071e196233acebfc6ed9ac930f213b4adaf6))
+
+- docs(readme): update installation guide ([58e225](https://github.com/almahdi404/code-django/commit/58e225778213b7f9819f7956c7a30da3b2b6ff79))
+
 ## [0.5.2] 2023-01-16
 
 - fix: activationEvents ([eebec2](https://github.com/almahdi404/code-django/commit/eebec2441e1e65e766931c1e44ede6ae2f53cc66))
