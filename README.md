@@ -470,16 +470,11 @@ Press <kbd>(ctrl+shift+/)</kbd>or<kbd>(cmd+shift+/)</kbd> to comment and uncomme
 
 1. From vscode
 
-   - Go to `Extensions` (Ctrl+Shift+X)
-   - Search for `Django Support` by (**Al Mahdi**)
-   - Click `Install`
+   - Launch VS Code Quick Open (Ctrl+P)
+   - Paste `ext install almahdi.code-django`
+   - Press enter
 
-2. From marketplace
-
-   - Go to the marketplace page of [Django Support](https://marketplace.visualstudio.com/items?itemName=almahdi.code-django) by (**Al Mahdi**)
-   - Click `Install`
-
-3. From cli
+2. From cli
 
    - Open terminal
    - Enter : `code --install-extension almahdi.code-django`
