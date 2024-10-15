@@ -470,7 +470,7 @@ Press <kbd>(ctrl+shift+/)</kbd>or<kbd>(cmd+shift+/)</kbd> to comment and uncomme
 
 <details>
 
-**Template and url names autocompletion**
+**Template, staticfiles and url names autocompletion**
 
 ![highlighting](images/template_autocompletion.gif)
 ![highlighting](images/example_on_template.gif)
