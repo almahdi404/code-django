@@ -466,6 +466,20 @@ Press <kbd>(ctrl+shift+/)</kbd>or<kbd>(cmd+shift+/)</kbd> to comment and uncomme
 
 <br/>
 
+> 5\. Autocompletion
+
+<details>
+
+**Template and url names autocompletion**
+
+![highlighting](images/template_autocompletion.gif)
+![highlighting](images/example_on_template.gif)
+![highlighting](images/url_autocompletion.gif)
+
+whenever you create a template or register a new url you need to run the command `Code Django: update cache` or wait for the cache to update itself.
+
+</details>
+
 ## Installation
 
 1. From vscode
