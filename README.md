@@ -468,9 +468,9 @@ Press <kbd>(ctrl+shift+/)</kbd>or<kbd>(cmd+shift+/)</kbd> to comment and uncomme
 
 > 5\. Autocompletion
 
-<details>
-
 **Template**, **Staticfiles** and **Url** autocompletion
+
+<details>
 
 ![highlighting](images/autocompletion_in_html.gif)
 ![highlighting](images/autocompletion_in_python.gif)
