@@ -470,14 +470,13 @@ Press <kbd>(ctrl+shift+/)</kbd>or<kbd>(cmd+shift+/)</kbd> to comment and uncomme
 
 <details>
 
-**Template, staticfiles and url names autocompletion**
-
-works on html and python files.
+**Template**, **Staticfiles** and **Url** autocompletion
 
 ![highlighting](images/autocompletion_in_html.gif)
 ![highlighting](images/autocompletion_in_python.gif)
 
-ATTENTION: whenever you create a template or register a new url you need to run the command `Code Django: update cache` or wait for the cache to update itself.
+> [!TIP]
+> Whenever you create a template or register a new url you need to run the command `Code Django: update cache` or wait for the cache to update itself.
 
 </details>
 
