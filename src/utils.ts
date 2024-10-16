@@ -1,4 +1,7 @@
 import * as vscode from "vscode";
+import { updateUrlsConfigsCache } from "./providers/urlNameProviders";
+import { updateCachedStaticFiles } from "./providers/staticFileProviders";
+import { updateTemplatesCompletions } from "./providers/templateNameProviders";
 
 export function getEOL(document: vscode.TextDocument) {
   if (document.eol === vscode.EndOfLine["LF"]) {
@@ -62,4 +65,46 @@ export function createDocumentSelectorsForExtensions(extensions: string[]) {
     scheme: "file",
     pattern: `**/*.${languageCode}`,
   }));
+}
+
+export async function updateProvidersCaches() {
+  vscode.window.withProgress(
+    {
+      location: vscode.ProgressLocation.Notification,
+      title: "Code Django",
+      cancellable: false,
+    },
+    async (progress) => {
+      const steps = [
+        {
+          func: updateUrlsConfigsCache,
+          message: "updating url names cache...",
+        },
+        {
+          func: updateCachedStaticFiles,
+          message: "updating staticfiles cache...",
+        },
+        {
+          func: updateTemplatesCompletions,
+          message: "updating template names cache...",
+        },
+      ];
+      for (let index = 0; index < steps.length; index++) {
+        const step = steps[index];
+        progress.report({
+          message: step.message,
+          increment: (100 / steps.length) * index,
+        });
+        await step.func();
+      }
+      progress.report({
+        increment: 100,
+        message: "cache successfully updated!",
+      });
+      const p = new Promise<void>((resolve) => {
+        resolve();
+      });
+      return p;
+    }
+  );
 }
