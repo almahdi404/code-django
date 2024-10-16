@@ -137,7 +137,7 @@ function activateDefinitionProviderForStaticFiles() {
   });
 }
 
-export async function activateStaticFilesAutocompletion(
+export function activateStaticFilesAutocompletion(
   context: vscode.ExtensionContext
 ) {
   activateDefinitionProviderForStaticFiles();

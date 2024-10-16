@@ -1,7 +1,7 @@
 import * as vscode from "vscode";
 import { getEOL } from "../utils";
 
-export async function toggleComment(
+export function toggleComment(
   editor: vscode.TextEditor,
   editorEdit: vscode.TextEditorEdit
 ) {
@@ -96,12 +96,14 @@ export async function toggleComment(
         editorEdit.replace(range, lines.join(getEOL(document)));
       } else {
         const lines: string[] = [];
-        lines.push(`${document.lineAt(sLine).text.match(/\s*/)}{% comment %}`);
+        lines.push(
+          `${document.lineAt(sLine).text.match(/\s*/)?.[0]}{% comment %}`
+        );
         for (let i = sLine; i <= eLine; i++) {
           lines.push(`  ${document.lineAt(i).text}`);
         }
         lines.push(
-          `${document.lineAt(eLine).text.match(/\s*/)}{% endcomment %}`
+          `${document.lineAt(eLine).text.match(/\s*/)?.[0]}{% endcomment %}`
         );
         const start = new vscode.Position(sLine, 0);
         const end = new vscode.Position(
@@ -114,6 +116,6 @@ export async function toggleComment(
     }
   }
   if (edit.has(document.uri)) {
-    await vscode.workspace.applyEdit(edit);
+    vscode.workspace.applyEdit(edit);
   }
 }

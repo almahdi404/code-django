@@ -48,7 +48,9 @@ export class TemplateLinkProvider implements vscode.DocumentLinkProvider {
       const range = this.getRange(document, match);
       const search = `**/${match[1]}`;
       const link = range && (await this.getDocumentLink(range, search, token));
-      link && links.push(link);
+      if (link) {
+        links.push(link);
+      }
     }
 
     for (const match of matchesRelative) {
@@ -57,7 +59,9 @@ export class TemplateLinkProvider implements vscode.DocumentLinkProvider {
         join(dirname(document.uri.path), match[1])
       );
       const link = range && (await this.getDocumentLink(range, search, token));
-      link && links.push(link);
+      if (link) {
+        links.push(link);
+      }
     }
 
     if (token.isCancellationRequested) {

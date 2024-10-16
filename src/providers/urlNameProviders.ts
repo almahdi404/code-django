@@ -168,7 +168,7 @@ function activateDefinitionProviderForUrls() {
   });
 }
 
-export async function activateUrlNamesAutocompletion(
+export function activateUrlNamesAutocompletion(
   context: vscode.ExtensionContext
 ) {
   activateDefinitionProviderForUrls();

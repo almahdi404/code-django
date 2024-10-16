@@ -41,7 +41,7 @@ function isJsonString(str) {
   try {
     const json = JSON.parse(str);
     return typeof json == "object";
-  } catch (e) {
+  } catch {
     return false;
   }
 }

@@ -98,7 +98,7 @@ function createAutocompletionProvider(config: ProviderConfig) {
   );
 }
 
-export async function activateTemplatesAutocompletion(
+export function activateTemplatesAutocompletion(
   context: vscode.ExtensionContext
 ) {
   for (const config of configs) {

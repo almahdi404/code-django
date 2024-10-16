@@ -14,9 +14,7 @@ import {
   updateTemplatesCompletions,
 } from "./providers/templateNameProviders";
 
-export async function activate(
-  context: vscode.ExtensionContext
-): Promise<void> {
+export function activate(context: vscode.ExtensionContext): void {
   const templateLink = new TemplateLinkProvider();
   context.subscriptions.push(
     vscode.languages.registerDocumentLinkProvider(
@@ -41,9 +39,15 @@ export async function activate(
       vscode.window.showInformationMessage(
         "Code Django: cache update incomming."
       );
-      updateUrlsConfigsCache();
-      updateCachedStaticFiles();
-      updateTemplatesCompletions();
+      updateUrlsConfigsCache()
+        .then(() => {})
+        .catch(() => {});
+      updateCachedStaticFiles()
+        .then(() => {})
+        .catch(() => {});
+      updateTemplatesCompletions()
+        .then(() => {})
+        .catch(() => {});
     })
   );
 }

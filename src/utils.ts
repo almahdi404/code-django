@@ -46,7 +46,7 @@ export function getCleanedLineUntilPosition(
   currentPosition: vscode.Position,
   linesToCheck: number
 ) {
-  let lineIndex = (currentPosition as any).c - linesToCheck;
+  let lineIndex = currentPosition.line - linesToCheck;
   if (lineIndex < 0) {
     lineIndex = 0;
   }
