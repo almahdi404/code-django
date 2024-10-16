@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.0] 2024-10-17
+
+- feat: url, staticfiles and template name provider (#15) ([fa5ea7](https://github.com/almahdi404/code-django/commit/fa5ea7ff8395787a098f7344387ebe82d6402dae))
+
 ## [0.5.4] 2024-03-16
 
 - chore: update sponsor url ([b9ca1b](https://github.com/almahdi404/code-django/commit/b9ca1bdbe89640b08512c7fe9caa4cd1f3019c86))
