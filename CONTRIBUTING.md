@@ -12,6 +12,7 @@ code .
 ### Commit
 
 ```properties
+npm run lint
 npm run clean
 git add .
 git commit -m "message"
