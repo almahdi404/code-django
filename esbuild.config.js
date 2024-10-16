@@ -16,7 +16,6 @@ const watch = {
   ...base,
   logLevel: "debug",
   sourcemap: true,
-  watch: true,
 };
 
 /** @type {esbuild.BuildOptions} */
@@ -26,9 +25,13 @@ const build = {
   minify: true,
 };
 
-const configs = {
-  watch,
-  build,
-};
+async function main() {
+  if (process.argv[2] === "watch") {
+    let ctx = await esbuild.context(watch);
+    ctx.watch();
+  } else if (process.argv[2] === "build") {
+    await esbuild.build(build);
+  }
+}
 
-esbuild.build(configs[process.argv[2]]).catch(() => process.exit(1));
+main();
