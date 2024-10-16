@@ -243,6 +243,12 @@
         "language": "python",
         "path": "./snippets/views/methods.json"
       }
+    ],
+    "commands": [
+      {
+        "command": "code-django.updateCache",
+        "title": "Code Django: update cache"
+      }
     ]
   }
 }
