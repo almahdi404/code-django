@@ -36,18 +36,30 @@ export function activate(context: vscode.ExtensionContext): void {
 
   context.subscriptions.push(
     vscode.commands.registerTextEditorCommand("code-django.updateCache", () => {
-      vscode.window.showInformationMessage(
-        "Code Django: cache update incomming."
+      const updateMessage = vscode.window.createStatusBarItem(
+        vscode.StatusBarAlignment.Left,
+        0
       );
-      updateUrlsConfigsCache()
-        .then(() => {})
-        .catch(() => {});
-      updateCachedStaticFiles()
-        .then(() => {})
-        .catch(() => {});
-      updateTemplatesCompletions()
-        .then(() => {})
-        .catch(() => {});
+      updateMessage.text = "Code Django: update cache $(sync~spin)";
+      context.subscriptions.push(updateMessage);
+      updateMessage.show();
+      Promise.all([
+        updateUrlsConfigsCache(),
+        updateCachedStaticFiles(),
+        updateTemplatesCompletions(),
+      ])
+        .then(() => {
+          updateMessage.text = "Code Django: update cache $(check)";
+          setTimeout(() => {
+            updateMessage.dispose();
+          }, 500);
+        })
+        .catch(() => {
+          updateMessage.text = "Code Django: update cache $(x)";
+          setTimeout(() => {
+            updateMessage.dispose();
+          }, 500);
+        });
     })
   );
 }
