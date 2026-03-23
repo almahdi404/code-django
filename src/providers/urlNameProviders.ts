@@ -2,7 +2,6 @@ import * as vscode from "vscode";
 import {
   createDocumentSelectorsForExtensions,
   createEndsWithRegex,
-  fileBeginningRange,
   getCleanedLineUntilPosition,
   getCompleteStringFromLine,
 } from "../utils";
@@ -32,13 +31,18 @@ const providerConfigs: ProviderConfig[] = [
 ];
 
 type GroupedUrls = {
-  [key: string]: vscode.Uri[];
+  [key: string]: vscode.Location[];
+};
+
+type UrlDefinition = {
+  name: string;
+  range: vscode.Range;
 };
 
 type UrlFileConfig = {
   uri: vscode.Uri;
   appName: string | null;
-  urlNames: string[];
+  urlDefinitions: UrlDefinition[];
 };
 
 let cachedUrlsConfigs: vscode.CompletionItem[] = [];
@@ -50,24 +54,33 @@ async function getUrlsFilesUris() {
 }
 
 async function getUrlsConfigsFromFile(uri: vscode.Uri): Promise<UrlFileConfig> {
-  const data = (await vscode.workspace.fs.readFile(uri)).toString();
+  const document = await vscode.workspace.openTextDocument(uri);
+  const data = document.getText();
   const appNameRegex = /app_name\s*=\s*(.*)/;
   let appName = null;
   const appNameMatch = appNameRegex.exec(data);
   if (appNameMatch && appNameMatch[1]) {
     appName = appNameMatch[1].trim().replace(/['"]/g, "");
   }
-  const nameArgRegex = /\b(name)( *=*)*['"](.*)['"]/g;
-  const urlNames = [];
+  const nameArgRegex = /\bname\s*=\s*['"]([^'"]+)['"]/g;
+  const urlDefinitions: UrlDefinition[] = [];
   let match;
 
   while ((match = nameArgRegex.exec(data)) !== null) {
-    const urlName = match[match.length - 1].trim();
-    if (urlName !== "") {
-      urlNames.push(urlName);
+    const urlName = match[1]?.trim();
+    if (urlName) {
+      const valueStartOffset = (match.index ?? 0) + match[0].indexOf(urlName);
+      const valueEndOffset = valueStartOffset + urlName.length;
+      urlDefinitions.push({
+        name: urlName,
+        range: new vscode.Range(
+          document.positionAt(valueStartOffset),
+          document.positionAt(valueEndOffset)
+        ),
+      });
     }
   }
-  return { appName, urlNames, uri };
+  return { appName, urlDefinitions, uri };
 }
 
 export async function updateUrlsConfigsCache() {
@@ -76,10 +89,10 @@ export async function updateUrlsConfigsCache() {
   cachedGroupUrls = {};
   for (const url of urls) {
     const configs = await getUrlsConfigsFromFile(url);
-    for (const urlName of configs.urlNames) {
-      const completeUrl = `${configs.appName}${
-        configs.appName ? ":" : ""
-      }${urlName}`;
+    for (const urlDefinition of configs.urlDefinitions) {
+      const completeUrl = `${configs.appName}${configs.appName ? ":" : ""}${
+        urlDefinition.name
+      }`;
       cachedUrlsConfigs.push({
         label: completeUrl,
         insertText: completeUrl,
@@ -88,7 +101,9 @@ export async function updateUrlsConfigsCache() {
       if (!cachedGroupUrls[completeUrl]) {
         cachedGroupUrls[completeUrl] = [];
       }
-      cachedGroupUrls[completeUrl].push(configs.uri);
+      cachedGroupUrls[completeUrl].push(
+        new vscode.Location(configs.uri, urlDefinition.range)
+      );
     }
   }
   cachedLastUpdatedTime = new Date().getTime();
@@ -150,10 +165,7 @@ async function urlProviderDefinition(
   }
   await getOrUpdateCompletionItems();
   if (urlName in cachedGroupUrls) {
-    return cachedGroupUrls[urlName].map((uri) => ({
-      uri,
-      range: fileBeginningRange,
-    }));
+    return cachedGroupUrls[urlName];
   }
 
   return [];
@@ -171,7 +183,8 @@ function activateDefinitionProviderForUrls() {
 export function activateUrlNamesAutocompletion(
   context: vscode.ExtensionContext
 ) {
-  activateDefinitionProviderForUrls();
+  const definitionProvider = activateDefinitionProviderForUrls();
+  context.subscriptions.push(definitionProvider);
   for (const config of providerConfigs) {
     const provider = createAutocompletionProvider(config);
     context.subscriptions.push(provider);
