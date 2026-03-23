@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.1] 2026-03-23
+
+- refactor: add more precise url definition provider - now takes directly to the definition line (#23) ([dba5c7b](https://github.com/almahdi404/code-django/commit/dba5c7b4e7a781a0f1bc6de26ff4c8de260bffa3))
+
 ## [1.0.0] 2024-10-17
 
 - feat: url, staticfiles and template name provider (#15) ([fa5ea7](https://github.com/almahdi404/code-django/commit/fa5ea7ff8395787a098f7344387ebe82d6402dae))
