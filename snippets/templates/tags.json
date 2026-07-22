@@ -479,5 +479,19 @@
       "{% endwith %}"
     ],
     "description": "{% with %} (paste) {% endwith %}"
+  },
+  "partialdef": {
+    "prefix": "partialdef",
+    "body": [
+      "{% partialdef $1 %}",
+      "\t${2:$TM_SELECTED_TEXT}",
+      "{% endpartialdef %}"
+    ],
+    "description": "{% partialdef %} {% endpartialdef %}"
+  },
+  "partial": {
+    "prefix": "partial",
+    "body": "{% partial $1 %}",
+    "description": "{% partial '...' %}"
   }
 }
