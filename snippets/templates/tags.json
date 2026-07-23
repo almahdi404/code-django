@@ -343,6 +343,20 @@
     "body": "{% now '${1|DATE_FORMAT,DATETIME_FORMAT,SHORT_DATE_FORMAT,SHORT_DATETIME_FORMAT,Y-m-d H:i|}' %}",
     "description": "{% now %}"
   },
+  "partial": {
+    "prefix": "partial",
+    "body": "{% partial $1 %}",
+    "description": "{% partial '...' %}"
+  },
+  "partialdef": {
+    "prefix": "partialdef",
+    "body": [
+      "{% partialdef $1 %}",
+      "\t${2:$TM_SELECTED_TEXT}",
+      "{% endpartialdef %}"
+    ],
+    "description": "{% partialdef %} {% endpartialdef %}"
+  },
   "regroup": {
     "prefix": "regroup",
     "body": "{% regroup $1 by $2 as ${3:_list} %}",

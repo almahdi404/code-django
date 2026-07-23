@@ -133,14 +133,14 @@ Press <kbd>(ctrl+shift+/)</kbd>or<kbd>(cmd+shift+/)</kbd> to comment and uncomme
 
 ### _**imports**_ / _**general**_
 
-| Trigger      | Description                                    |
-| ------------ | ---------------------------------------------- |
-| `iappforms`  | Import \- app.forms                            |
-| `iappmodels` | Import \- app.models                           |
-| `iappviews`  | Import \- app.views                            |
-| `ireverse`   | from django.urls import reverse                |
-| `isettings`  | from django.conf import settings               |
-| `iusermodel` | from django.contrib.auth import get_user_model |
+| Trigger      | Description                                      |
+| ------------ | ------------------------------------------------ |
+| `iappforms`  | Import \- app.forms                              |
+| `iappmodels` | Import \- app.models                             |
+| `iappviews`  | Import \- app.views                              |
+| `ireverse`   | from django.urls import reverse                  |
+| `isettings`  | from django.conf import settings                 |
+| `iusermodel` | from django.contrib.auth import get\_user\_model |
 
 ### _**models**_ / _**classes**_
 
@@ -206,20 +206,20 @@ Press <kbd>(ctrl+shift+/)</kbd>or<kbd>(cmd+shift+/)</kbd> to comment and uncomme
 
 ### _**models**_ / _**methods**_
 
-| Trigger            | Description                |
-| ------------------ | -------------------------- |
-| `get_absolute_url` | Method \- get_absolute_url |
-| `receiver`         | Method \- receiver         |
-| `str`              | Method \- \_\_str\_\_      |
+| Trigger            | Description                  |
+| ------------------ | ---------------------------- |
+| `get_absolute_url` | Method \- get\_absolute\_url |
+| `receiver`         | Method \- receiver           |
+| `str`              | Method \- \_\_str\_\_        |
 
 ### _**python**_ / _**imports**_
 
-| Trigger      | Description                                 |
-| ------------ | ------------------------------------------- |
-| `inpdb`      | Import \- nose pdb debug tool               |
-| `ipdb`       | Import \- ipdb debug tool                   |
-| `itraceback` | Import \- traceback print exception         |
-| `iul`        | from \_\_future\_\_ import unicode_literals |
+| Trigger      | Description                                  |
+| ------------ | -------------------------------------------- |
+| `inpdb`      | Import \- nose pdb debug tool                |
+| `ipdb`       | Import \- ipdb debug tool                    |
+| `itraceback` | Import \- traceback print exception          |
+| `iul`        | from \_\_future\_\_ import unicode\_literals |
 
 ### _**python**_ / _**methods**_
 
@@ -229,64 +229,64 @@ Press <kbd>(ctrl+shift+/)</kbd>or<kbd>(cmd+shift+/)</kbd> to comment and uncomme
 
 ### _**templates**_ / _**filters**_
 
-| Trigger                | Description                      |
-| ---------------------- | -------------------------------- |
-| `\|add`                | Filter \- add:Arg                |
-| `\|addslashes`         | Filter \- addslashes             |
-| `\|capfirst`           | Filter \- capfirst               |
-| `\|center`             | Filter \- center:Arg             |
-| `\|cut`                | Filter \- cut:Arg                |
-| `\|date`               | Filter \- date                   |
-| `\|default`            | Filter \- default:Arg            |
-| `\|default_if_none`    | Filter \- default_if_none:Arg    |
-| `\|dictsort`           | Filter \- dictsort:Arg           |
-| `\|dictsortreversed`   | Filter \- dictsortreversed:Arg   |
-| `\|divisibleby`        | Filter \- divisibleby:Arg        |
-| `\|escape`             | Filter \- escape                 |
-| `\|escapejs`           | Filter \- escapejs               |
-| `\|filesizeformat`     | Filter \- filesizeformat         |
-| `\|first`              | Filter \- first                  |
-| `\|floatformat`        | Filter \- floatformat            |
-| `\|force_escape`       | Filter \- force_escape           |
-| `\|get_digit`          | Filter \- get_digit              |
-| `\|iriencode`          | Filter \- iriencode              |
-| `\|join`               | Filter \- join:Arg               |
-| `\|last`               | Filter \- last                   |
-| `\|length`             | Filter \- length                 |
-| `\|length_is`          | Filter \- length_is:Arg          |
-| `\|linebreaks`         | Filter \- linebreaks             |
-| `\|linebreaksbr`       | Filter \- linebreaksbr           |
-| `\|linenumbers`        | Filter \- linenumbers            |
-| `\|ljust`              | Filter \- ljust                  |
-| `\|lower`              | Filter \- lower                  |
-| `\|make_list`          | Filter \- make_list              |
-| `\|phone2numeric`      | Filter \- phone2numeric          |
-| `\|pluralize`          | Filter \- pluralize              |
-| `\|pprint`             | Filter \- pprint                 |
-| `\|random`             | Filter \- random                 |
-| `\|rjust`              | Filter \- rjust                  |
-| `\|safe`               | Filter \- safe                   |
-| `\|safeseq`            | Filter \- safeseq                |
-| `\|slice`              | Filter \- slice:Arg              |
-| `\|slugify`            | Filter \- slugify                |
-| `\|stringformat`       | Filter \- stringformat           |
-| `\|striptags`          | Filter \- striptags              |
-| `\|time`               | Filter \- time:Arg               |
-| `\|timesince`          | Filter \- timesince:Arg          |
-| `\|timeuntil`          | Filter \- timeuntil:Arg          |
-| `\|title`              | Filter \- title                  |
-| `\|truncatechars`      | Filter \- truncatechars:Arg      |
-| `\|truncatechars_html` | Filter \- truncatechars_html:Arg |
-| `\|truncatewords`      | Filter \- truncatewords:Arg      |
-| `\|truncatewords_html` | Filter \- truncatewords_html:Arg |
-| `\|unordered_list`     | Filter \- unordered_list         |
-| `\|upper`              | Filter \- upper                  |
-| `\|urlencode`          | Filter \- urlencode              |
-| `\|urlize`             | Filter \- urlize                 |
-| `\|urlizetrunc`        | Filter \- urlizetrunc            |
-| `\|wordcount`          | Filter \- wordcount              |
-| `\|wordwrap`           | Filter \- wordwrap               |
-| `\|yesno`              | Filter \- yesno:Arg              |
+| Trigger                | Description                       |
+| ---------------------- | --------------------------------- |
+| `\|add`                | Filter \- add:Arg                 |
+| `\|addslashes`         | Filter \- addslashes              |
+| `\|capfirst`           | Filter \- capfirst                |
+| `\|center`             | Filter \- center:Arg              |
+| `\|cut`                | Filter \- cut:Arg                 |
+| `\|date`               | Filter \- date                    |
+| `\|default`            | Filter \- default:Arg             |
+| `\|default_if_none`    | Filter \- default\_if\_none:Arg   |
+| `\|dictsort`           | Filter \- dictsort:Arg            |
+| `\|dictsortreversed`   | Filter \- dictsortreversed:Arg    |
+| `\|divisibleby`        | Filter \- divisibleby:Arg         |
+| `\|escape`             | Filter \- escape                  |
+| `\|escapejs`           | Filter \- escapejs                |
+| `\|filesizeformat`     | Filter \- filesizeformat          |
+| `\|first`              | Filter \- first                   |
+| `\|floatformat`        | Filter \- floatformat             |
+| `\|force_escape`       | Filter \- force\_escape           |
+| `\|get_digit`          | Filter \- get\_digit              |
+| `\|iriencode`          | Filter \- iriencode               |
+| `\|join`               | Filter \- join:Arg                |
+| `\|last`               | Filter \- last                    |
+| `\|length`             | Filter \- length                  |
+| `\|length_is`          | Filter \- length\_is:Arg          |
+| `\|linebreaks`         | Filter \- linebreaks              |
+| `\|linebreaksbr`       | Filter \- linebreaksbr            |
+| `\|linenumbers`        | Filter \- linenumbers             |
+| `\|ljust`              | Filter \- ljust                   |
+| `\|lower`              | Filter \- lower                   |
+| `\|make_list`          | Filter \- make\_list              |
+| `\|phone2numeric`      | Filter \- phone2numeric           |
+| `\|pluralize`          | Filter \- pluralize               |
+| `\|pprint`             | Filter \- pprint                  |
+| `\|random`             | Filter \- random                  |
+| `\|rjust`              | Filter \- rjust                   |
+| `\|safe`               | Filter \- safe                    |
+| `\|safeseq`            | Filter \- safeseq                 |
+| `\|slice`              | Filter \- slice:Arg               |
+| `\|slugify`            | Filter \- slugify                 |
+| `\|stringformat`       | Filter \- stringformat            |
+| `\|striptags`          | Filter \- striptags               |
+| `\|time`               | Filter \- time:Arg                |
+| `\|timesince`          | Filter \- timesince:Arg           |
+| `\|timeuntil`          | Filter \- timeuntil:Arg           |
+| `\|title`              | Filter \- title                   |
+| `\|truncatechars`      | Filter \- truncatechars:Arg       |
+| `\|truncatechars_html` | Filter \- truncatechars\_html:Arg |
+| `\|truncatewords`      | Filter \- truncatewords:Arg       |
+| `\|truncatewords_html` | Filter \- truncatewords\_html:Arg |
+| `\|unordered_list`     | Filter \- unordered\_list         |
+| `\|upper`              | Filter \- upper                   |
+| `\|urlencode`          | Filter \- urlencode               |
+| `\|urlize`             | Filter \- urlize                  |
+| `\|urlizetrunc`        | Filter \- urlizetrunc             |
+| `\|wordcount`          | Filter \- wordcount               |
+| `\|wordwrap`           | Filter \- wordwrap                |
+| `\|yesno`              | Filter \- yesno:Arg               |
 
 ### _**templates**_ / _**imports**_
 
@@ -317,7 +317,7 @@ Press <kbd>(ctrl+shift+/)</kbd>or<kbd>(cmd+shift+/)</kbd> to comment and uncomme
 | `comment`                   | \{\# \#\}                                                     |
 | `comment_block`             | \{% comment %\} \{% endcomment %\}                            |
 | `comment_paste`             | \{% comment %\} \(paste\) \{% endcomment %\}                  |
-| `csrf_token`                | \{% csrf_token %\}                                            |
+| `csrf_token`                | \{% csrf\_token %\}                                           |
 | `cycle`                     | \{% cycle %\}                                                 |
 | `debug`                     | \{% debug %\}                                                 |
 | `elif`                      | \{% elif %\}                                                  |
@@ -350,6 +350,8 @@ Press <kbd>(ctrl+shift+/)</kbd>or<kbd>(cmd+shift+/)</kbd> to comment and uncomme
 | `include`                   | \{% include '...' %\}                                         |
 | `lorem`                     | \{% lorem %\}                                                 |
 | `now`                       | \{% now %\}                                                   |
+| `partial`                   | \{% partial '...' %\}                                         |
+| `partialdef`                | \{% partialdef %\} \{% endpartialdef %\}                      |
 | `regroup`                   | \{% regroup %\}                                               |
 | `regroup_example`           | \{% regroup %\} \(example\)                                   |
 | `resetcycle`                | \{% resetcycle %\}                                            |
@@ -454,11 +456,11 @@ Press <kbd>(ctrl+shift+/)</kbd>or<kbd>(cmd+shift+/)</kbd> to comment and uncomme
 
 ### _**views**_ / _**methods**_
 
-| Trigger            | Description                |
-| ------------------ | -------------------------- |
-| `dispatch`         | Method \- dispatch         |
-| `get_context_data` | Method \- get_context_data |
-| `get_queryset`     | Method \- get_queryset     |
+| Trigger            | Description                  |
+| ------------------ | ---------------------------- |
+| `dispatch`         | Method \- dispatch           |
+| `get_context_data` | Method \- get\_context\_data |
+| `get_queryset`     | Method \- get\_queryset      |
 
 <!-- EndSnippets -->
 
